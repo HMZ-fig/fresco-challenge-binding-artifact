@@ -23,6 +23,9 @@ Pinned upstream revision: `f8383e6aead6b44d44b798553aaf0bcaccd81dab` (FRESCO 1.3
 | `code/kernel/mascot/` | MASCOT element-generation and SPDZ propagation probes, hook installers |
 | `data/timing.zip` (`timing/`) | raw author-run timing logs (no percentages are reported in the paper) |
 | `data/corpus-mutation/` | mutation-study reports (`mutation-mpspdz`, `mutation-coral`, `mutation-scale`, `mutation-spdz`) |
+| `data/specs/` | the 26 specification files used by the transcript monitor |
+| `data/mascot.zip` | MASCOT element-generation and SPDZ propagation probe logs |
+| `data/patched-regression.zip` | surefire reports for the patched eleven-case suite |
 
 Logs and surefire reports were sanitized before release: local project paths are replaced by
 `<PROJECT>`, the user profile by `<USER>`, Maven cache paths by `<M2>`, and the JDK path by
@@ -39,8 +42,10 @@ Full result-line totals include:
 - two-party successes: 5 (four in `k2p*`, one in `k4p`);
 - four-party success: 1 (`k4p`);
 - K=8 changed: 6 unpatched (`kv-0..5`) and 6 patched (`fk8-0..5`);
-- K=1 unpatched: 14 `unchanged` (4 in `kv*`, 6 in `kv3*`, 3 in `ctrl*`, 1 in `k*`) and 2
-  `error` (`kv-1`, `kv-5`); K=1 patched: 11 `unchanged` and 3 `blocked`;
+- K=1 logs are exploratory and are not interpreted. The paper's designated subset has 6
+  unpatched and 8 patched invocations, with 6/6 and 6/8 unchanged opened values and 2 patched
+  invocations blocked; an `unchanged` line may be a skipped edit because the test only applies
+  the edit for even coefficients (applicability was not logged).
 - non-kernel controls: 3 configurations blocked.
 
 The K=1 test applies an edit only for even coefficients; for odd coefficients it skips the edit
