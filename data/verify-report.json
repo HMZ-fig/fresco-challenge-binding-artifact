@@ -22,7 +22,7 @@
     "[INFO] ",
     "[INFO] ",
     "[INFO] --- jacoco:0.8.11:report (report) @ spdz2k ---",
-    "[INFO] Loading execution data file <PROJECT>\\_hunt\\fresco\\suite\\spdz2k\\target\\jacoco.exec",
+    "[INFO] Loading execution data file <PROJECT>\\suite\\spdz2k\\target\\jacoco.exec",
     "[INFO] Analyzed bundle 'fresco-spdz2k' with 33 classes",
     "[INFO] ------------------------------------------------------------------------",
     "[INFO] BUILD SUCCESS",
