@@ -1,41 +1,38 @@
 [
   {
     "batch_size": 8,
-    "source": "_hunt\\fresco-bench8.log",
+    "source": "fresco-bench8.log",
     "raw_records": 30,
     "discarded_records": 2,
     "retained_records": 28,
     "seed_median_ns": 1080450.0,
     "check_median_ns": 2349250.0,
-    "share_of_sum_of_medians": 0.3150275534303292,
-    "ratio_to_check_median_arithmetic_only": 0.4599127381079068,
     "independent_runs": false,
-    "timer_boundaries_verified": false
+    "timer_boundaries_verified": false,
+    "note": "exploratory only; no percentages are reported in the paper"
   },
   {
     "batch_size": 100,
-    "source": "_hunt\\fresco-bench100.log",
+    "source": "fresco-bench100.log",
     "raw_records": 30,
     "discarded_records": 2,
     "retained_records": 28,
     "seed_median_ns": 940200.0,
     "check_median_ns": 2489500.0,
-    "share_of_sum_of_medians": 0.2741347639735254,
-    "ratio_to_check_median_arithmetic_only": 0.3776661980317333,
     "independent_runs": false,
-    "timer_boundaries_verified": false
+    "timer_boundaries_verified": false,
+    "note": "exploratory only; no percentages are reported in the paper"
   },
   {
     "batch_size": 500,
-    "source": "_hunt\\fresco-bench500.log",
+    "source": "fresco-bench500.log",
     "raw_records": 30,
     "discarded_records": 2,
     "retained_records": 28,
     "seed_median_ns": 1123100.0,
     "check_median_ns": 4490500.0,
-    "share_of_sum_of_medians": 0.20006769274618783,
-    "ratio_to_check_median_arithmetic_only": 0.25010577886649593,
     "independent_runs": false,
-    "timer_boundaries_verified": false
+    "timer_boundaries_verified": false,
+    "note": "exploratory only; no percentages are reported in the paper"
   }
 ]
