@@ -1,0 +1,61 @@
+{
+  "name": "signal-zkcred-fixed",
+  "events": [
+    [
+      "init",
+      "Signal_ZKCredential_Presentation_20230410",
+      []
+    ],
+    [
+      "absorb",
+      "label",
+      [
+        "label"
+      ]
+    ],
+    [
+      "absorb",
+      "commitments",
+      [
+        "C_x0",
+        "C_x1",
+        "C_V",
+        "C_y0",
+        "C_y1",
+        "C_y2",
+        "EA2"
+      ]
+    ],
+    [
+      "squeeze",
+      "z",
+      []
+    ],
+    [
+      "check",
+      "z",
+      [
+        "C_x0",
+        "C_x1",
+        "C_V",
+        "C_y0",
+        "C_y1",
+        "C_y2",
+        "EA2"
+      ]
+    ]
+  ],
+  "pc": [
+    "C_V",
+    "C_x0",
+    "C_x1",
+    "C_y0",
+    "C_y1",
+    "C_y2",
+    "C_y2_minus_EA2",
+    "EA2"
+  ],
+  "post": {},
+  "has_domain": true,
+  "constraint_bound": []
+}
