@@ -1,7 +1,6 @@
-# Challenge Binding in Cryptographic Implementations: artifact
+# Challenge Binding in FRESCO SPDZ2k: artifact
 
-Artifact for the manuscript *Challenge Binding in Cryptographic Implementations: From a Public
-Design Rule to an Executable Attack in FRESCO SPDZ2k* (IACR Cryptology ePrint Archive). This
+Artifact for the manuscript *Challenge Binding in FRESCO SPDZ2k: From a Public Design Rule to an Executable Attack* (IACR Cryptology ePrint Archive). This
 repository contains only the frozen code, recorded data and result tables.
 
 ## Contents
