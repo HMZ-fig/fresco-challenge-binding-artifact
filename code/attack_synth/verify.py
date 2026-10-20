@@ -7,7 +7,7 @@ Maven, parse the SYNTH_* markers, write a report, and remove the generated file 
 --keep is given.
 
 Usage:
-    python verify.py --fresco-root D:/Projects/New/_hunt/fresco --batch 4
+    python verify.py --fresco-root /path/to/fresco --batch 4
 """
 
 from __future__ import annotations
@@ -22,8 +22,8 @@ from pathlib import Path
 
 TOOLS = Path(__file__).resolve().parent
 ROOT = TOOLS.parents[1]
-DEFAULT_MVN = ROOT / "_hunt" / "apache-maven-3.9.9" / "bin" / "mvn.cmd"
-DEFAULT_SETTINGS = ROOT / "_hunt" / "maven-settings.xml"
+DEFAULT_MVN = Path(os.environ.get("MVN_CMD", "mvn"))
+DEFAULT_SETTINGS = Path(os.environ["MVN_SETTINGS"]) if os.environ.get("MVN_SETTINGS") else None
 PACKAGE = "suite/spdz2k/src/test/java/dk/alexandra/fresco/suite/spdz2k/protocols/computations"
 
 
@@ -46,7 +46,7 @@ def parse_markers(text: str) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--fresco-root", type=Path, default=ROOT / "_hunt" / "fresco")
+    ap.add_argument("--fresco-root", type=Path, default=Path(os.environ.get("FRESCO_ROOT", "fresco")))
     ap.add_argument("--batch", type=int, default=4)
     ap.add_argument("--class-name", default="SynthAppOutputTest")
     ap.add_argument("--mvn", type=Path, default=DEFAULT_MVN)
@@ -68,7 +68,8 @@ def main() -> int:
     cmd = [str(args.mvn), "-B", "-s", str(args.settings), "-pl", "suite/spdz2k",
            f"-Dtest={args.class_name}", "test"]
     env = dict(os.environ)
-    env.setdefault("JAVA_HOME", r"C:\java\jdk-21.0.11+10")
+    if "JAVA_HOME" not in env:
+        raise SystemExit("JAVA_HOME is not set; export it before running the driver")
     try:
         proc = subprocess.run(cmd, cwd=str(args.fresco_root), capture_output=True, text=True,
                               encoding="utf-8", errors="replace", env=env)
