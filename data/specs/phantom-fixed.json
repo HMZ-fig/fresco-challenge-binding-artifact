@@ -1,0 +1,86 @@
+{
+  "name": "phantom-fixed",
+  "events": [
+    [
+      "init",
+      "or-proof-v1",
+      []
+    ],
+    [
+      "absorb",
+      "stmt",
+      [
+        "x0",
+        "x1"
+      ]
+    ],
+    [
+      "absorb",
+      "a",
+      [
+        "a0",
+        "a1"
+      ]
+    ],
+    [
+      "squeeze",
+      "c",
+      []
+    ],
+    [
+      "absorb",
+      "c0",
+      [
+        "c0"
+      ]
+    ],
+    [
+      "absorb",
+      "z",
+      [
+        "z0",
+        "z1"
+      ]
+    ],
+    [
+      "squeeze",
+      "w",
+      []
+    ],
+    [
+      "check",
+      "c",
+      [
+        "x0",
+        "a0",
+        "z0"
+      ]
+    ],
+    [
+      "check",
+      "w",
+      [
+        "c0",
+        "z0"
+      ]
+    ]
+  ],
+  "pc": [
+    "a0",
+    "a1",
+    "c0",
+    "x0",
+    "x1",
+    "z0",
+    "z1"
+  ],
+  "post": {
+    "c": [
+      "z0",
+      "z1"
+    ],
+    "w": []
+  },
+  "has_domain": true,
+  "constraint_bound": []
+}
