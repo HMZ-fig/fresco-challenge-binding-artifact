@@ -1,0 +1,40 @@
+{
+  "name": "plonky3-unbound",
+  "events": [
+    [
+      "init",
+      "uni-stark",
+      []
+    ],
+    [
+      "absorb",
+      "trace",
+      [
+        "trace_commit",
+        "preprocessed_commit"
+      ]
+    ],
+    [
+      "squeeze",
+      "zeta",
+      []
+    ],
+    [
+      "check",
+      "zeta",
+      [
+        "trace_commit",
+        "preprocessed_commit",
+        "public_values"
+      ]
+    ]
+  ],
+  "pc": [
+    "preprocessed_commit",
+    "public_values",
+    "trace_commit"
+  ],
+  "post": {},
+  "has_domain": true,
+  "constraint_bound": []
+}
