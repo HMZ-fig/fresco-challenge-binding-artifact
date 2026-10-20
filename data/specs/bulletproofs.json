@@ -1,0 +1,98 @@
+{
+  "name": "bulletproofs",
+  "events": [
+    [
+      "init",
+      "rangeproof",
+      []
+    ],
+    [
+      "absorb",
+      "V",
+      [
+        "V"
+      ]
+    ],
+    [
+      "absorb",
+      "AS",
+      [
+        "A",
+        "S"
+      ]
+    ],
+    [
+      "squeeze",
+      "y",
+      []
+    ],
+    [
+      "squeeze",
+      "z",
+      []
+    ],
+    [
+      "absorb",
+      "T",
+      [
+        "T1",
+        "T2"
+      ]
+    ],
+    [
+      "squeeze",
+      "x",
+      []
+    ],
+    [
+      "absorb",
+      "t",
+      [
+        "t_x",
+        "t_x_blinding",
+        "e_blinding"
+      ]
+    ],
+    [
+      "squeeze",
+      "w",
+      []
+    ],
+    [
+      "check",
+      "x",
+      [
+        "T1",
+        "T2"
+      ]
+    ],
+    [
+      "check",
+      "w",
+      [
+        "t_x",
+        "t_x_blinding",
+        "e_blinding"
+      ]
+    ]
+  ],
+  "pc": [
+    "A",
+    "S",
+    "T1",
+    "T2",
+    "V",
+    "e_blinding",
+    "t_x",
+    "t_x_blinding"
+  ],
+  "post": {
+    "x": [
+      "e_blinding",
+      "t_x",
+      "t_x_blinding"
+    ]
+  },
+  "has_domain": true,
+  "constraint_bound": []
+}
