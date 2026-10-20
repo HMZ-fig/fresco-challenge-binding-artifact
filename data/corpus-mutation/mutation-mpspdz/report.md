@@ -1,4 +1,4 @@
-# OrderTool report: D:\Projects\New\_hunt\mutation-mpspdz\Protocols
+# OrderTool report: <PROJECT>\mutation-mpspdz\Protocols
 
 139 check-like functions.
 
