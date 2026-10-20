@@ -38,6 +38,7 @@ public class TestKernelVariants extends AbstractSpdz2kTest<Spdz2kResourcePool<Co
   private static volatile byte[] capturedSeed;
   private static final BigInteger MOD = BigInteger.ONE.shiftLeft(128);
   private static volatile List<BigInteger> lastOpened;
+  private static volatile boolean k1EditApplied;
   private static volatile int n = 2;
   private static volatile boolean single = false;
 
@@ -134,6 +135,7 @@ public class TestKernelVariants extends AbstractSpdz2kTest<Spdz2kResourcePool<Co
                           BigInteger r = cs.get(0);
                           BigInteger e = MOD.divide(r.gcd(MOD));
                           if (e.compareTo(MOD) < 0) { // r 为奇数时 e = M 等价于不改
+                            k1EditApplied = true;
                             Spdz2kSInt<CompUInt128> v =
                                 (Spdz2kSInt<CompUInt128>) vals.get(0).out();
                             Spdz2kSInt<CompUInt128> nv =
@@ -179,6 +181,7 @@ public class TestKernelVariants extends AbstractSpdz2kTest<Spdz2kResourcePool<Co
 
   private void run(int count, boolean stealth, String tag) {
     lastOpened = null;
+    k1EditApplied = false;
     try {
       runTest(new Variant<>(count, stealth), EvaluationStrategy.SEQUENTIAL_BATCHED, 3);
     } catch (RuntimeException ex) {
@@ -201,7 +204,7 @@ public class TestKernelVariants extends AbstractSpdz2kTest<Spdz2kResourcePool<Co
         }
       }
     }
-    System.out.println(tag + (changed ? " changed" : " unchanged"));
+    System.out.println(tag + (changed ? " changed" : " unchanged") + " editApplied=" + k1EditApplied);
   }
 
   @Test
