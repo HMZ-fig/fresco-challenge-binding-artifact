@@ -1,4 +1,4 @@
-# OrderTool report: D:\Projects\New\_hunt\mutation-coral
+# OrderTool report: <PROJECT>\mutation-coral
 
 131 check-like functions.
 
