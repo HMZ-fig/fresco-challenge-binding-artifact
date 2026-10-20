@@ -1,6 +1,6 @@
 # Challenge Binding in FRESCO SPDZ2k: artifact
 
-Artifact for the manuscript *Challenge Binding in FRESCO SPDZ2k: A Modeled Share-Replacement Case Study* (IACR Cryptology ePrint Archive). This
+Artifact for the manuscript *Challenge Binding in FRESCO SPDZ2k: A Message-Level Case Study* (IACR Cryptology ePrint Archive). This
 repository contains only the frozen code, recorded data and result tables.
 
 ## Contents
@@ -8,7 +8,8 @@ repository contains only the frozen code, recorded data and result tables.
 - `code/attack_synth/`: kernel-vector synthesis (`synth.py`), missing-binding decision
   (`binding.py`), coefficient-source audit (`audit.py`), JUnit emitter (`emit_junit.py`) and
   execution driver (`verify.py`).
-- `code/kernel/`: FRESCO SPDZ2k test classes (kernel vector, protocol-level sum/product), the
+- `code/kernel/`: FRESCO SPDZ2k test classes (kernel vector, protocol-level sum/product,
+  message-level opening), the
   disclosed eleven-case suite and its four-file patch, and the MASCOT probe hooks.
 - `data/`: recorded reports and evidence bundles. `synth-report-real.json` and
   `synth-report-k4.json` show residual 0 with both low parts changed; `binding-report.json`
