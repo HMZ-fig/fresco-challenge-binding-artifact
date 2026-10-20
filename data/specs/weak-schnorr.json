@@ -1,0 +1,50 @@
+{
+  "name": "weak-schnorr",
+  "events": [
+    [
+      "init",
+      "schnorr-v1",
+      []
+    ],
+    [
+      "absorb",
+      "a",
+      [
+        "a"
+      ]
+    ],
+    [
+      "squeeze",
+      "c",
+      []
+    ],
+    [
+      "absorb",
+      "z",
+      [
+        "z"
+      ]
+    ],
+    [
+      "check",
+      "c",
+      [
+        "x",
+        "a",
+        "z"
+      ]
+    ]
+  ],
+  "pc": [
+    "a",
+    "x",
+    "z"
+  ],
+  "post": {
+    "c": [
+      "z"
+    ]
+  },
+  "has_domain": true,
+  "constraint_bound": []
+}
