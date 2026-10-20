@@ -18,7 +18,10 @@
 | `k` | `K5_RESULT changed` | 1 |
 | `k` | `K8C_RESULT blocked` | 1 |
 | `k` | `K8_RESULT changed` | 1 |
+| `k2p` | `KERNEL2P_RESULT success` | 4 |
 | `k2p` | `KERNEL_RESULT success` | 4 |
+| `k4p` | `KERNEL2P_RESULT success` | 1 |
+| `k4p` | `KERNEL4P_RESULT success` | 1 |
 | `k4p` | `KERNEL_RESULT success` | 1 |
 | `ku` | `KERNEL_RESULT success` | 30 |
 | `kv` | `K1_RESULT error` | 2 |
