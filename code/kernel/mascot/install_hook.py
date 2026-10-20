@@ -2,14 +2,15 @@
 # -*- coding: utf-8 -*-
 """Install the MASCOT input gap test hook.
 
-Run from anywhere with the FRESCO tree at _hunt/fresco; revert with
+Run from anywhere with the FRESCO tree at $FRESCO_ROOT; revert with
 `git checkout -- tools/mascot/src/main/java/.../elgen/ElementGeneration.java`.
 """
 
 from pathlib import Path
+import os
 
 ROOT = Path(__file__).resolve().parents[3]
-P = (ROOT / "_hunt/fresco/tools/mascot/src/main/java"
+P = (Path(os.environ.get("FRESCO_ROOT", "fresco")) / "tools/mascot/src/main/java"
          r"\dk\alexandra\fresco\tools\mascot\elgen\ElementGeneration.java")
 
 t = P.read_text(encoding="utf-8")
