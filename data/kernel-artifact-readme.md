@@ -14,6 +14,7 @@ Pinned upstream revision: `f8383e6aead6b44d44b798553aaf0bcaccd81dab` (FRESCO 1.3
 | `code/kernel/TestKernelAttack.java`, `code/kernel/TestKernelVariants.java` | deterministic `e = (r_j, -r_i)` tests: K=2 at 2/3/4 parties; K=3/5/8; non-kernel controls; K=1 high-bit case |
 | `code/kernel/TestKernelAppOutput.java` | protocol-level three-party sum/product probe |
 | `data/appoutput.zip` (`appoutput/`) | its run log: honest `[50, 600]`; tampered `[4143675807337242761, 9821738699198359411]` accepted |
+| `code/kernel/TestKernelMessageLevel.java`, `data/message-level.zip` | message-level reachability: a corrupt party's own opening protocol sends shifted shares; unmodified honest parties accept wrong outputs; includes run log and surefire report |
 | `data/kernel-runs.zip` (`kernel-runs/unpatched/`, `kernel-runs/patched/`) | recorded kernel-vector run logs |
 | `code/kernel/parse_results.py` | aggregator for the run logs (fixes `KERNEL2P_RESULT`/`KERNEL4P_RESULT` rows) |
 | `data/kernel-runs-summary.md` | aggregator output |
@@ -111,6 +112,15 @@ git apply code/kernel/fix.patch
 mvn -pl suite/spdz2k -Dtest=TestSpdz2kMacCheckCancellation test   # 4 pass, 7 errors
 ```
 
+## Message-level reachability
+
+`TestKernelMessageLevel` is the model-free counterpart of the object-level `TestKernelAppOutput`
+probe. The corrupt party's application appends its own opening protocol; it sends the
+least-significant share of an authenticated element whose share has been shifted by the kernel
+vector and keeps the MAC share. Honest parties run FRESCO's original `Spdz2kOutputToAllProtocol`.
+The recorded run (`data/message-level.zip`, `run.log`) has honest `[50, 600]`, an accepted
+tampered run with wrong outputs, and a blocked non-kernel control.
+
 ## Limits
 
 - Author-run, one machine and one JVM, dummy preprocessing; the artifact lets a reader repeat the
@@ -125,3 +135,10 @@ mvn -pl suite/spdz2k -Dtest=TestSpdz2kMacCheckCancellation test   # 4 pass, 7 er
 - The K=1 high-bit test skips the edit when the coefficient is odd; applicability was not logged.
 - Timing logs are shipped for completeness only. Because the instrumentation is not retained with
   the measured revision, no percentage or deployment-overhead claim is made.
+- In `appoutput/run.log`, `APPOUT_TAMPER_RESULT status=1` is a tamper flag set by the test,
+  not an error or process exit code.
+- The MASCOT non-kernel control catches `RuntimeException` and sets `rejected=true`; the
+  exception type is not asserted, so it shows "the control aborted", not that the MAC check
+  rejected it.
+- `binding.py` reports the single-value case as bound; `binding-report.json` records only the
+  two-value attackable case.
