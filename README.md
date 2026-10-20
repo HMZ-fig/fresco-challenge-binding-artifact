@@ -18,7 +18,9 @@ repository contains only the frozen code, recorded data and result tables.
   Bundles: `kernel-runs.zip` (canonical kernel-vector runs), `disclosed-runs.zip` (eleven-case
   suite runs), `appoutput.zip` (protocol-level sum/product probe, including the run log with
   `[4143675807337242761, 9821738699198359411]`) and `timing.zip` (raw timing logs). The
-  row-to-log mapping is in `data/kernel-artifact-readme.md`.
+  `corpus-mutation/` holds the mutation-study reports; the row-to-log mapping is in
+  `data/kernel-artifact-readme.md`. In `appoutput.zip`, `APPOUT_TAMPER_RESULT status=1` is a
+  tamper flag set by the test, not an error code.
 - `tables/kernel-evidence.csv`: the configuration-by-configuration evidence table.
 
 ## Provenance
@@ -33,6 +35,10 @@ run, the single-opening boundary, a four-file candidate patch and reproducible l
 
 Experiments were author-run on one machine and one JVM with dummy preprocessing; the artifact
 lets a reader repeat them and is not independent replication.
+
+The MASCOT non-kernel control catches any `RuntimeException`; the exception type is not asserted.
+`binding.py` reports the single-value case as bound, while `binding-report.json` records only the
+two-value attackable case.
 
 ## License
 
