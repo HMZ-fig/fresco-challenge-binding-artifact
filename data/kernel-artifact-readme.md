@@ -119,7 +119,8 @@ probe. The corrupt party's application appends its own opening protocol; it send
 least-significant share of an authenticated element whose share has been shifted by the kernel
 vector and keeps the MAC share. Honest parties run FRESCO's original `Spdz2kOutputToAllProtocol`.
 The recorded run (`data/message-level.zip`, `run.log`) has honest `[50, 600]`, an accepted
-tampered run with wrong outputs, and a blocked non-kernel control.
+tampered run with wrong outputs, and a blocked non-kernel control; `repeat-runs.txt` records ten
+further runs with fresh seeds, all of which passed.
 
 ## Limits
 
