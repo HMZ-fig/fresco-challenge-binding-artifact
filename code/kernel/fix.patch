@@ -1,0 +1,75 @@
+diff --git a/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/protocols/computations/Spdz2kMacCheckComputation.java b/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/protocols/computations/Spdz2kMacCheckComputation.java
+index 31f13a7..80cde4d 100644
+--- a/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/protocols/computations/Spdz2kMacCheckComputation.java
++++ b/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/protocols/computations/Spdz2kMacCheckComputation.java
+@@ -50,14 +50,15 @@ public class Spdz2kMacCheckComputation<
+    */
+   public Spdz2kMacCheckComputation(Pair<List<Spdz2kSInt<PlainT>>, List<PlainT>> toCheck,
+       Spdz2kResourcePool<PlainT> resourcePool,
+-      CompUIntConverter<HighT, LowT, PlainT> converter) {
++      CompUIntConverter<HighT, LowT, PlainT> converter,
++      dk.alexandra.fresco.framework.util.Drbg coefficientDrbg) {
+     this.authenticatedElements = toCheck.getFirst();
+     this.openValues = toCheck.getSecond();
+     this.converter = converter;
+     this.serializer = resourcePool.getFactory().getSerializer();
+     this.supplier = resourcePool.getDataSupplier();
+     this.randomCoefficients = sampleCoefficients(
+-        resourcePool.getRandomGenerator(),
++        coefficientDrbg,
+         resourcePool.getFactory(),
+         authenticatedElements.size());
+     this.commitmentSerializer = resourcePool.getCommitmentSerializer();
+diff --git a/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePool.java b/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePool.java
+index 6d2b63b..b5e74c7 100644
+--- a/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePool.java
++++ b/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePool.java
+@@ -62,6 +62,11 @@ public interface Spdz2kResourcePool<PlainT extends CompUInt<?, ?, PlainT>>
+    *
+    * @return An instance of a DRBG.
+    */
++  /**
++   * 研究用修复：每次检查前重新抛币，返回新的联合种子（对打开值固定前不可预测）。
++   */
++  byte[] freshJointSeed(Network network);
++
+   Drbg getRandomGenerator();
+ 
+   /**
+diff --git a/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePoolImpl.java b/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePoolImpl.java
+index 610e718..436a11a 100644
+--- a/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePoolImpl.java
++++ b/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePoolImpl.java
+@@ -126,6 +126,14 @@ public class Spdz2kResourcePoolImpl<PlainT extends CompUInt<?, ?, PlainT>>
+     return localDrbg;
+   }
+ 
++  @Override
++  public byte[] freshJointSeed(Network network) {
++    Computation<byte[], ProtocolBuilderNumeric> coinTossing =
++        new CoinTossingComputation(32, new HashBasedCommitmentSerializer(),
++            getLocalRandomGenerator());
++    return runCoinTossing(coinTossing, network);
++  }
++
+   /**
+    * Evaluates, on the fly, a coin-tossing computation to get joint seed.
+    */
+diff --git a/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/synchronization/Spdz2kRoundSynchronization.java b/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/synchronization/Spdz2kRoundSynchronization.java
+index 2260965..1eb0983 100644
+--- a/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/synchronization/Spdz2kRoundSynchronization.java
++++ b/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/synchronization/Spdz2kRoundSynchronization.java
+@@ -60,9 +60,12 @@ public class Spdz2kRoundSynchronization<
+         protocolSuite,
+         batchSize);
+     OpenedValueStore<Spdz2kSInt<PlainT>, PlainT> store = resourcePool.getOpenedValueStore();
++    byte[] freshSeed = resourcePool.freshJointSeed(network);
++    dk.alexandra.fresco.framework.util.Drbg coefficientDrbg =
++        new dk.alexandra.fresco.framework.util.AesCtrDrbg(freshSeed);
+     Spdz2kMacCheckComputation<HighT, LowT, PlainT> macCheck = new Spdz2kMacCheckComputation<>(
+         store.popValues(),
+-        resourcePool, converter);
++        resourcePool, converter, coefficientDrbg);
+     ProtocolBuilderNumeric sequential = builder.createSequential();
+     macCheck.buildComputation(sequential);
+     evaluator.eval(sequential.build(), resourcePool, network);
