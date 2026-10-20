@@ -204,11 +204,16 @@ public class TestKernelMessageLevel extends AbstractSpdz2kTest<Spdz2kResourcePoo
   }
 
   private void run(boolean tamper, boolean control) {
+    run(tamper, control, 3);
+  }
+
+  private void run(boolean tamper, boolean control, int parties) {
     lastOpened = null;
     status = 0;
     blocked = false;
+    System.out.println("MSGLVL_PARTIES " + parties);
     try {
-      runTest(new App(tamper, control), EvaluationStrategy.SEQUENTIAL_BATCHED, 3);
+      runTest(new App(tamper, control), EvaluationStrategy.SEQUENTIAL_BATCHED, parties);
     } catch (RuntimeException ex) {
       Throwable c = ex;
       while (c.getCause() != null) {
@@ -247,6 +252,32 @@ public class TestKernelMessageLevel extends AbstractSpdz2kTest<Spdz2kResourcePoo
     System.out.println("MSGLVL_TAMPER_OK " + (status == 1 && changed));
     if (!(status == 1 && changed)) {
       throw new AssertionError("message-level tamper not observed: status=" + status
+          + " opened=" + lastOpened);
+    }
+  }
+
+  @Test
+  public void messageLevelTwoParties() {
+    run(true, false, 2);
+    boolean changed = lastOpened != null && lastOpened.size() == 2
+        && !lastOpened.get(0).equals(BigInteger.valueOf(50))
+        && !lastOpened.get(1).equals(BigInteger.valueOf(600));
+    System.out.println("MSGLVL_2P_TAMPER_OK " + (status == 1 && changed));
+    if (!(status == 1 && changed)) {
+      throw new AssertionError("2-party message-level tamper not observed: status=" + status
+          + " opened=" + lastOpened);
+    }
+  }
+
+  @Test
+  public void messageLevelFourParties() {
+    run(true, false, 4);
+    boolean changed = lastOpened != null && lastOpened.size() == 2
+        && !lastOpened.get(0).equals(BigInteger.valueOf(50))
+        && !lastOpened.get(1).equals(BigInteger.valueOf(600));
+    System.out.println("MSGLVL_4P_TAMPER_OK " + (status == 1 && changed));
+    if (!(status == 1 && changed)) {
+      throw new AssertionError("4-party message-level tamper not observed: status=" + status
           + " opened=" + lastOpened);
     }
   }
