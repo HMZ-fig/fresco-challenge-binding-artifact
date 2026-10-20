@@ -125,7 +125,8 @@ least-significant share of an authenticated element whose share has been shifted
 vector and keeps the MAC share. Honest parties run FRESCO's original `Spdz2kOutputToAllProtocol`.
 The recorded run (`data/message-level.zip`, `run.log`) has honest `[50, 600]`, an accepted
 tampered run with wrong outputs, and a blocked non-kernel control; `repeat-runs.txt` records ten
-further runs with fresh seeds, all of which passed.
+further runs with fresh seeds, all of which passed; `run-multiparty.log` records the same
+message-level acceptance at two and four parties (all runs use the dummy supplier).
 
 ## Limits
 
