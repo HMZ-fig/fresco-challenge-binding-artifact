@@ -14,10 +14,10 @@ repository contains only the frozen code, recorded data and result tables.
 - `data/`: recorded reports and evidence bundles. `synth-report-real.json` and
   `synth-report-k4.json` show residual 0 with both low parts changed; `binding-report.json`
   reproduces the probe deltas `[6372, 19772]`; `verify-report.json` records honest `[50, 600]`
-  and an accepted tampered run; `audit-report.json` classifies 17 checks in eight frameworks.
+  and an accepted tampered run; `audit-report.json` contains three per-file verdicts, while the 17-check manual audit is in the companion manuscript.
   Bundles: `kernel-runs.zip` (canonical kernel-vector runs), `disclosed-runs.zip` (eleven-case
-  suite runs), `appoutput.zip` (protocol-level sum/product probe, including the run log with
-  `[4143675807337242761, 9821738699198359411]`) and `timing.zip` (raw timing logs). The
+  suite runs), `appoutput.zip` (object-level sum/product probe, including the run log with
+  `[4143675807337242761, 9821738699198359411]`), `message-level.zip` (message-level opening run), `mascot.zip` (MASCOT probe logs), `patched-regression.zip` (patched-suite surefire reports) and `timing.zip` (raw timing logs). The
   `corpus-mutation/` holds the mutation-study reports; the row-to-log mapping is in
   `data/kernel-artifact-readme.md`. In `appoutput.zip`, `APPOUT_TAMPER_RESULT status=1` is a
   tamper flag set by the test, not an error code.
