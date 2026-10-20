@@ -1,0 +1,39 @@
+{
+  "honest": {
+    "status": 0,
+    "opened": [
+      50,
+      600
+    ]
+  },
+  "tamper": {
+    "status": 1,
+    "opened": [
+      7272616386388937259,
+      13889006554384388372
+    ]
+  },
+  "honest_ok": true,
+  "tamper_ok": true,
+  "maven_exit": 0,
+  "batch": 4,
+  "class": "SynthAppOutputTest",
+  "log_tail": [
+    "[INFO] ",
+    "[INFO] ",
+    "[INFO] --- jacoco:0.8.11:report (report) @ spdz2k ---",
+    "[INFO] Loading execution data file <PROJECT>\\_hunt\\fresco\\suite\\spdz2k\\target\\jacoco.exec",
+    "[INFO] Analyzed bundle 'fresco-spdz2k' with 33 classes",
+    "[INFO] ------------------------------------------------------------------------",
+    "[INFO] BUILD SUCCESS",
+    "[INFO] ------------------------------------------------------------------------",
+    "[INFO] Total time:  3.941 s",
+    "[INFO] Finished at: 2026-10-20T11:13:24+08:00",
+    "[INFO] ------------------------------------------------------------------------",
+    "",
+    "SLF4J: Failed to load class \"org.slf4j.impl.StaticLoggerBinder\".",
+    "SLF4J: Defaulting to no-operation (NOP) logger implementation",
+    "SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details."
+  ],
+  "confirmed": true
+}
