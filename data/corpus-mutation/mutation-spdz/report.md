@@ -1,4 +1,4 @@
-# OrderTool report: D:\Projects\New\_hunt\mutation-spdz\src
+# OrderTool report: <PROJECT>\mutation-spdz\src
 
 14 check-like functions.
 
