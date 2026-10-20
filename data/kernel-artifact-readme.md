@@ -49,9 +49,12 @@ Full result-line totals include:
 - non-kernel controls: 3 configurations blocked.
 
 The K=1 test applies an edit only for even coefficients; for odd coefficients it skips the edit
-and still prints `unchanged`. The logs do not record applicability, so the paper reports the K=1
-row as a bounded observation, not an edit-acceptance count. The two `K1_RESULT error` lines are
-retained and not investigated.
+and still prints `unchanged`. The older logs do not record applicability, so the paper reports the
+K=1 row as a bounded observation, not an edit-acceptance count. A fresh control with an
+applicability flag (`runs/k1-applicability.log`) applied the edit in 9/20 runs and produced
+`K1_RESULT unchanged` in all 20, consistent with the nonzero-coefficient boundary. The two old
+`K1_RESULT error` lines could not be reproduced (20/20 unchanged); they are treated as
+stale/transient and are not used as evidence. K=1 conclusions are analytic, not log-derived.
 
 ## Canonical mapping (paper table row -> logs)
 
