@@ -29,7 +29,7 @@ index 6d2b63b..b5e74c7 100644
     * @return An instance of a DRBG.
     */
 +  /**
-+   * 研究用修复：每次检查前重新抛币，返回新的联合种子（对打开值固定前不可预测）。
++   * Research patch: fresh coin toss before each check; returns a new joint seed that is unpredictable before the opened values are fixed.
 +   */
 +  byte[] freshJointSeed(Network network);
 +
