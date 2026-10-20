@@ -1,0 +1,15 @@
+file,line,function,order,evidence
+main\java\dk\alexandra\fresco\suite\spdz\SpdzRoundSynchronization.java,42,doMacCheck,different-mechanism,no randomness found
+main\java\dk\alexandra\fresco\suite\spdz\datatypes\SpdzSInt.java,25,getMac,different-mechanism,no randomness found
+main\java\dk\alexandra\fresco\suite\spdz\gates\SpdzMacCheckProtocol.java,38,SpdzMacCheckProtocol,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\TestFakeTripGen.java,81,checkMasks,hash-based,"hash/commitment comparison, no coefficients"
+test\java\dk\alexandra\fresco\suite\spdz\TestSpdzRoundSynchronization.java,17,testFinishedEvalMacCheck,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\TestSpdzRoundSynchronization.java,23,testMacCheckExceedThreshold,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\TestSpdzRoundSynchronizationExceedsThreshold.java,17,testFinishedEvalMacCheck,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\maccheck\MaliciousSpdzMacCheckComputation.java,34,MaliciousSpdzMacCheckComputation,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\maccheck\MaliciousSpdzRoundSynchronization.java,31,doMacCheck,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\maccheck\TestMacCheck.java,47,testMacCorrupt,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\storage\FakeTripGen.java,694,getMac,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\storage\TestParallelMascots.java,102,setupMacKeyShares,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\storage\TestSpdzDummyDataSupplier.java,55,getMacKeyFromSuppliers,different-mechanism,no randomness found
+test\java\dk\alexandra\fresco\suite\spdz\storage\TestSpdzDummyDataSupplier.java,252,assertMacCorrect,hash-based,"hash/commitment comparison, no coefficients"
