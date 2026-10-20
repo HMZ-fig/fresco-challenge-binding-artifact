@@ -166,11 +166,17 @@ public class TestKernelMessageLevel extends AbstractSpdz2kTest<Spdz2kResourcePoo
                               // Kernel vector for the last two openings: e1 = r2, e2 = -r1.
                               BigInteger e1 = coeffs.get(3);
                               BigInteger e2 = MOD.subtract(coeffs.get(2));
+                              if (!control && (coeffs.get(2).signum() == 0
+                                  || coeffs.get(3).signum() == 0)) {
+                                throw new IllegalStateException("zero coefficient draw");
+                              }
                               if (control) {
                                 e1 = BigInteger.ONE;
                                 e2 = BigInteger.ZERO;
                               }
                               CompUIntFactory<CompUInt128> factory = new CompUInt128Factory();
+                              // The multiply protocol opens two intermediate values first, so the two output
+                              // openings are positions 2 and 3 of the four-opening batch.
                               outs.add(par.append(new TamperedOutputToAllProtocol<>(
                                   sum, factory.createElement(e1))));
                               outs.add(par.append(new TamperedOutputToAllProtocol<>(
@@ -235,8 +241,9 @@ public class TestKernelMessageLevel extends AbstractSpdz2kTest<Spdz2kResourcePoo
   @Test
   public void messageLevelTamperAccepted() {
     run(true, false);
-    boolean changed = lastOpened != null
-        && !lastOpened.equals(Arrays.asList(BigInteger.valueOf(50), BigInteger.valueOf(600)));
+    boolean changed = lastOpened != null && lastOpened.size() == 2
+        && !lastOpened.get(0).equals(BigInteger.valueOf(50))
+        && !lastOpened.get(1).equals(BigInteger.valueOf(600));
     System.out.println("MSGLVL_TAMPER_OK " + (status == 1 && changed));
     if (!(status == 1 && changed)) {
       throw new AssertionError("message-level tamper not observed: status=" + status
