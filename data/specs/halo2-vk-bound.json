@@ -1,0 +1,44 @@
+{
+  "name": "halo2-vk-bound",
+  "events": [
+    [
+      "init",
+      "halo2-plonk",
+      []
+    ],
+    [
+      "absorb",
+      "vk",
+      [
+        "vk"
+      ]
+    ],
+    [
+      "absorb",
+      "a",
+      [
+        "a"
+      ]
+    ],
+    [
+      "squeeze",
+      "c",
+      []
+    ],
+    [
+      "check",
+      "c",
+      [
+        "vk",
+        "a"
+      ]
+    ]
+  ],
+  "pc": [
+    "a",
+    "vk"
+  ],
+  "post": {},
+  "has_domain": true,
+  "constraint_bound": []
+}
