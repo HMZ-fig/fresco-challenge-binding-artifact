@@ -10,6 +10,4 @@ candidate patch K=2,6,blocked
 candidate patch K=3,1,blocked
 candidate patch K=5,1,blocked
 candidate patch K=8,6,blocked
-K=1 high-bit-only unpatched,6,accepted with unchanged opened value
-K=1 high-bit-only patched,8,6 accepted and 2 blocked
 disclosed eleven-case suite,11,4 baselines pass and 7 attacks accepted
