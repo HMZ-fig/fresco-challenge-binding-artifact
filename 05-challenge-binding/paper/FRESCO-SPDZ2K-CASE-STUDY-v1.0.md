@@ -41,7 +41,7 @@ For sampled challenges, **C2** asks whether the challenge distribution, conditio
 
 For derived challenges $r=H(\tau(x))$, **C1** asks whether the encoded transcript binds the required pre-challenge choices, up to equivalences justified by the protocol. Syntactic dependence on every field is insufficient: an ambiguous encoding can map distinct choices to the same transcript. Required fields, encoding, domain context, and alternative binding through protocol constraints must be considered together. The monitor in Section 3 checks an annotated approximation to this requirement.
 
-The companion ZK manuscript separates coverage (B1), encoding (B2), and domain separation (B3). Here C1 names the transcript-binding question as a whole; the monitor evaluates its annotated coverage component.
+The transcript-binding question includes coverage of required fields, encoding, and domain separation. The monitor evaluates the annotated coverage component.
 
 ### 2.2. Sampled and derived challenges require different bounds
 
@@ -191,13 +191,13 @@ A complete mitigation argument remains unfinished. It must establish the binding
 
 The timing directory, `code/artifact/kernel/kernel/timing/`, retains thirty labeled `seed_ns`/`check_ns` intervals per batch size. The instrumentation that produced those intervals is not retained with the measured revision, so their overlap and relationship to an unmodified baseline remain unverified. We report no percentage or deployment-overhead conclusion from these logs.
 
-### 4.8. Disclosure record and related manuscripts
+### 4.8. Disclosure and evidence provenance
 
 FRESCO issue #324 records the per-check coin-tossing rule publicly since 2018-12-10 [issue324]. The present case study examines this concern at the studied SPDZ2k revision.
 
-The retained project record states that the reproduction, eleven-case suite, and four-file patch were emailed to the maintainers on 2026-10-20, citing issue #324. It records no reply as of 18:00 China Standard Time that day and schedules a follow-up for 2026-11-03. Later correspondence and release status are not established by this record.
+The disclosure record states that the reproduction, eleven-case suite, and four-file patch were emailed to the maintainers on 2026-10-20, citing issue #324. It records no reply as of 18:00 China Standard Time that day. Subsequent maintainer correspondence and upstream remediation status are not established by that record.
 
-The associated manuscripts use the same FRESCO tests, patch, and recorded runs and therefore share one experimental record. Their evidence is not counted as independent replication here.
+The case study draws on one collection of FRESCO tests, patch files, and recorded executions. Reused records are not counted as independent replication.
 
 ## 5. Related work and positioning
 
@@ -231,21 +231,21 @@ The sampling and derived-check propositions state conditional guarantees. The sa
 
 The FRESCO evidence covers one revision and local author-controlled runs with dummy preprocessing and party threads within one JVM. The message-level harness exercises two, three and four parties, and the retained computation demonstrates accepted wrong outputs. These are existence demonstrations within the tested environment. Deployment reachability, unrestricted malicious behavior, attack rates and application overhead remain outside the evidence. The candidate patch rejects the recorded attacks but still requires a security argument for its coin tossing and remaining correction messages. MASCOT and emp-agmpc remain secondary check-level observations.
 
-### 6.2. Local artifact and reproduction status
+### 6.2. Artifact availability and reproducibility
 
-The local delivery package retains test code, reports and logs for inspection. Paths below are relative to `05-challenge-binding/`:
+The manuscript, test code, candidate patch, and retained evidence are publicly available at <https://github.com/HMZ-fig/fresco-challenge-binding-artifact>. Clone the repository or download a release archive. The paths below are relative to its `05-challenge-binding/` subtree; run the Appendix B commands from the repository root:
 
 - `code/artifact/kernel/kernel/` contains the kernel-vector tests and retained runs, including the message-level, sum/product, disclosed-suite, MASCOT, patched and timing evidence.
 - `code/artifact/synth/synth/` contains the synthesizer, binding analysis, source audit, JUnit emitter and driver, with recorded reports. Corresponding report copies are retained under `data/synth/`.
 - `data/specs/` contains the 26 annotated transcript specifications; `data/ordertool/` contains the saved source-scan reports.
 
-The code, recorded evidence, and this manuscript are available at <https://github.com/HMZ-fig/fresco-challenge-binding-artifact>. The `05-challenge-binding/` subtree preserves the relative paths used here and in Appendix B; the repository README separately indexes the legacy bundles. The dated verification records remain distinct from the historical runs.
+The repository README indexes the legacy bundles, and the repository-root `SHA256SUMS` lists hashes for the released files. The dated verification records remain distinct from the historical runs.
 
-The initial local audit on 2026-11-03 found that `code/artifact/run_all.py` requires source snapshots and some entry points absent from this package. The packaged `run_specs.py` also retains paths from the earlier directory layout. Correcting those paths in memory gave 26/26 expected specification verdicts. This specification check is separate from the implementation executions.
+The [artifact README](https://github.com/HMZ-fig/fresco-challenge-binding-artifact/blob/main/05-challenge-binding/README.md) documents the import and input path setup for replaying the 26 specifications with `code/artifact/run_specs.py`. With that setup, all 26 specifications matched their expected verdicts. The historical `code/artifact/run_all.py` harness still requires unshipped source snapshots and entry points; it is not a supported route for repeating the complete survey. This specification replay is separate from the implementation executions.
 
-The author-requested local review then executed the Appendix B core recipe in a fresh checkout of the exact revision, with an isolated Maven repository, Apache Maven 3.9.9, and Temurin OpenJDK 21.0.11+10-LTS on Windows 11 amd64. The dependency build succeeded, and 28 inspected public source snapshots matched the checkout's Git blobs byte for byte. The unchanged message-level class completed five tests with zero failures or errors: the honest result was `[50, 600]`, the non-kernel control was blocked, and the two-, four-, and three-party tampered results all returned normally. Their functional residues were respectively `2688113812081450723`, `9173839401870698115`, and `17687041535159237539`, all nonzero. The unchanged disclosed suite completed eleven cases without errors on the original code. Applying only the supplied four-file patch produced seven `Mac check failed` errors and four completed baselines; the old oracle limitations remain as stated in Section 4.3.
+Verification on 2026-11-03 executed the Appendix B core recipe in a fresh checkout of the exact revision, with an isolated Maven repository, Apache Maven 3.9.9, and Temurin OpenJDK 21.0.11+10-LTS on Windows 11 amd64. The dependency build succeeded, and 28 inspected public source snapshots matched the checkout's Git blobs byte for byte. The unchanged message-level class completed five tests with zero failures or errors: the honest result was `[50, 600]`, the non-kernel control was blocked, and the two-, four-, and three-party tampered results all returned normally. Their functional residues were respectively `2688113812081450723`, `9173839401870698115`, and `17687041535159237539`, all nonzero. The unchanged disclosed suite completed eleven cases without errors on the original code. Applying only the supplied four-file patch produced seven `Mac check failed` errors and four completed baselines; the old oracle limitations remain as stated in Section 4.3.
 
-These are new verification executions dated 2026-11-03, kept outside the historical canonical counts in Table 1. They are not independent laboratory replication. The logs, version output, valid new Surefire reports, test/patch hashes, and execution summary are retained under `data/verification-2026-11-03/`; `evidence-index.json` hashes the copied records and `run-manifest.json` identifies the precise inputs and command initialization differences. The historical logs were not overwritten. Appendix B supplies the current-layout recipe. Restoring the broader historical survey inputs and entry points remains a separate packaging task.
+These 2026-11-03 verification executions are kept outside the historical canonical counts in Table 1. They are not independent laboratory replication. The logs, version output, valid new Surefire reports, test/patch hashes, and execution summary are retained under `data/verification-2026-11-03/`; `evidence-index.json` hashes the copied records and `run-manifest.json` identifies the precise inputs and command initialization differences. The historical logs were not overwritten. Appendix B supplies the current-layout recipe. The broader historical survey harness remains incomplete in this release.
 
 ### 6.3. Remaining research questions
 
@@ -544,7 +544,7 @@ The retained mutation study changes randomness at six sites. Four changes are de
 
 The transcript monitor checks an author-supplied dependency model; OrderTool extracts source-pattern candidates. Their outputs have different meanings and cannot be combined into one security verdict. The narrower coefficient-source audit in `data/synth/audit-report.json` records three per-file classifications for FRESCO: `Spdz2kMacCheckComputation` is a candidate, while `SpdzMacCheckProtocol` and `SpdzRoundSynchronization` are classified as fresh. These are also heuristic classifications.
 
-The companion manuscript's manual audit of 17 checks in eight frameworks is a separate dataset. Those counts are excluded from the totals here. The present paper reports the ten selected scan targets and the evidence for the FRESCO case study.
+The present paper reports the ten selected scan targets and the evidence for the FRESCO case study.
 
 ### C.3. Descriptive corpus
 
