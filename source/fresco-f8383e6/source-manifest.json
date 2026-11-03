@@ -1,0 +1,173 @@
+{
+  "revision": "f8383e6aead6b44d44b798553aaf0bcaccd81dab",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/protocols/computations/Spdz2kMacCheckComputation.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kMacCheckComputation.java",
+      "sha256": "c2f6eb58b0cc51bd04d768ba74289947ab11a4b8c6a0c8aacbeb8ca69dd5d708",
+      "bytes": 7176
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/datatypes/CompUInt128.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\CompUInt128.java",
+      "sha256": "8d435304a6344dffdcbd0af573ecf88a6204d7084a4c0afe1601e4c0f73acb8f",
+      "bytes": 6332
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/datatypes/CompUInt128Factory.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\CompUInt128Factory.java",
+      "sha256": "02b58a329f6515d0847ce8946522f52d5f39165e94f43d6c25247e2f29433148",
+      "bytes": 2574
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/datatypes/CompUIntConverter.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\CompUIntConverter.java",
+      "sha256": "2378401478822d7a564c2d4dca2409b59b45a4ffa339df884e96f6808900b4b3",
+      "bytes": 546
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/datatypes/CompUIntConverter128.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\CompUIntConverter128.java",
+      "sha256": "d85f931c5a374207f7b442bce86711be79efc3089f63a68828eb8ebe63afd6cb",
+      "bytes": 357
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/datatypes/CompUInt.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\CompUInt.java",
+      "sha256": "ef5ed3851cf0381e5c49e775d935f168983e4dbf0cfca9e4e046227a32ea23db",
+      "bytes": 2897
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/protocols/natives/Spdz2kOutputToAllProtocol.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kOutputToAllProtocol.java",
+      "sha256": "8e00d144743def8d3e7a3544c37edfea913355a26c3304a7607db9b12ed361fe",
+      "bytes": 2186
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePoolImpl.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kResourcePoolImpl.java",
+      "sha256": "ba770580e175b20a989312e9c814361273791e2fdb4d682efac6ebdeb0129f1b",
+      "bytes": 5911
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/storage/Spdz2kDummyDataSupplier.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kDummyDataSupplier.java",
+      "sha256": "f3770250ad250a6dff3a206947e976f54ed0464c906268b51e155e3fa8c4cbdd",
+      "bytes": 2801
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/synchronization/Spdz2kRoundSynchronization.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kRoundSynchronization.java",
+      "sha256": "5349c821355e6bb47090a706712a6b04184ca5a572a52ce4b764b87c35e1f9fc",
+      "bytes": 4577
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/Spdz2kProtocolSuiteK64.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kProtocolSuiteK64.java",
+      "sha256": "8d6dcf5f257a2185037d64237d7ee5fe51fdb6a57ba4b38d0cb0a440372ec512",
+      "bytes": 503
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/protocols/natives/Spdz2kMultiplyProtocol.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kMultiplyProtocol.java",
+      "sha256": "f65744971174e990ac33954ddee5736df433dcea2105f09457a84de0e833e577",
+      "bytes": 3599
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/datatypes/Spdz2kSInt.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kSInt.java",
+      "sha256": "7a961e83570cc82d93b71985c91f7fecedd8dd70a0d3a86de3cc6c65ec7eb379",
+      "bytes": 2680
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/util/UIntSerializer.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\UIntSerializer.java",
+      "sha256": "997e94cb380e47c047e20a352d57cada2ddc82450fef25d0a2146c709e06759f",
+      "bytes": 1877
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/test/java/dk/alexandra/fresco/suite/spdz2k/AbstractSpdz2kTest.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\AbstractSpdz2kTest.java",
+      "sha256": "f69208536495a892ecad00573711b12fdb95bcef3fff878edae61b9f586d851e",
+      "bytes": 3554
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/test/java/dk/alexandra/fresco/framework/TestThreadRunner.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\TestThreadRunner.java",
+      "sha256": "e46075c98452c40e6a8b67db713d0608820774f71215eeebefd68b7709f89ef8",
+      "bytes": 7428
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/framework/util/ArithmeticDummyDataSupplier.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\ArithmeticDummyDataSupplier.java",
+      "sha256": "667d57485691190d7e23bed7d33ac49e37506a83c950b960750cf13320112bdc",
+      "bytes": 4904
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/framework/util/AesCtrDrbg.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\AesCtrDrbg.java",
+      "sha256": "db3a525179013bb3c60b0971d838574a958981fc3acd13ad8e94a85217391dd7",
+      "bytes": 4642
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/framework/builder/ProtocolBuilderImpl.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\ProtocolBuilderImpl.java",
+      "sha256": "6f79a38b4faa2c55448021bde4d1a9802706add483f6d320cba091db9e518173",
+      "bytes": 3731
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/framework/builder/BuildStep.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\BuildStep.java",
+      "sha256": "9b3e635bfae169ec591a409d15e3f71108be7b80794e224d76fa9cbd9ba04a3e",
+      "bytes": 4947
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/framework/sce/evaluator/BatchedProtocolEvaluator.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\BatchedProtocolEvaluator.java",
+      "sha256": "c5fb8d6ac243e2502e0484d370ab10eea7e43204bd48e4782a370d471b014591",
+      "bytes": 3200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/framework/sce/evaluator/BatchedStrategy.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\BatchedStrategy.java",
+      "sha256": "e31de5bcc08b5f3647d4fb4c3fcdf03629c5ced0466952d79f3d7f3046a5eb30",
+      "bytes": 2159
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/framework/sce/evaluator/ProtocolCollectionList.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\ProtocolCollectionList.java",
+      "sha256": "6a8b181dc90bc2c30f4d941873ff0d587cecd6ce4d5afabc37960b4c4719202e",
+      "bytes": 1025
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/lib/helper/SequentialProtocolProducer.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\SequentialProtocolProducer.java",
+      "sha256": "98ffc58de0b0b5ac858a857db2eebe4aad90d3f392cb24f6f13d8fdc5092ef8b",
+      "bytes": 2447
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/src/main/java/dk/alexandra/fresco/lib/helper/SingleProtocolProducer.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\SingleProtocolProducer.java",
+      "sha256": "5284e14a5cad2179cb9391186d9c658fd3ab8d704ff6b56c86b4636d3c11f98a",
+      "bytes": 1369
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/tools/commitment/src/main/java/dk/alexandra/fresco/tools/commitment/CoinTossingComputation.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\CoinTossingComputation.java",
+      "sha256": "e0ea57ed603ebac27af2c29c0b0912c7392001a568048bf31cfa701459bb06f1",
+      "bytes": 1670
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/tools/commitment/src/main/java/dk/alexandra/fresco/tools/commitment/CommitmentComputation.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\CommitmentComputation.java",
+      "sha256": "91a94b37bf54b748501fabff398d98d2d62266c0251073f348737f04628a931c",
+      "bytes": 3103
+    },
+    {
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/tools/commitment/src/main/java/dk/alexandra/fresco/tools/commitment/HashBasedCommitment.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\HashBasedCommitment.java",
+      "sha256": "5caf5c667ea1284dcf8de1a96fa914f2eeb95426c1a970dfa9365ebf5b366401",
+      "bytes": 5537
+    }
+  ]
+}

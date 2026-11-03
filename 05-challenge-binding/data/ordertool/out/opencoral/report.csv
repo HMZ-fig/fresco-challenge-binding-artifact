@@ -1,0 +1,43 @@
+file,line,function,order,evidence
+BaseMachine.cpp,55,BaseMachine,different-mechanism,no randomness found
+BaseMachine.h,66,BaseMachine,different-mechanism,no randomness found
+Data_Files.hpp,115,check_setup,different-mechanism,no randomness found
+Data_Files.hpp,121,check_setup,different-mechanism,no randomness found
+DummyProtocol.h,46,CheckFor,different-mechanism,no randomness found
+DummyProtocol.h,104,check,different-mechanism,no randomness found
+FieldMachine.h,37,DishonestMajorityFieldMachine,different-mechanism,no randomness found
+FieldMachine.hpp,16,HonestMajorityFieldMachine,different-mechanism,no randomness found
+FieldMachine.hpp,24,HonestMajorityFieldMachine,different-mechanism,no randomness found
+FieldMachine.hpp,33,FieldMachine,different-mechanism,no randomness found
+HonestMajorityMachine.cpp,17,HonestMajorityMachine,different-mechanism,no randomness found
+HonestMajorityMachine.h,18,HonestMajorityMachine,different-mechanism,no randomness found
+InsecureProtocol.h,59,CheckFor,different-mechanism,no randomness found
+InsecureProtocol.h,62,Check,different-mechanism,no randomness found
+Machine.h,102,get_bit_mac_key,different-mechanism,no randomness found
+Machine.h,103,get_sint_mac_key,different-mechanism,no randomness found
+Machine.hpp,70,Machine,different-mechanism,no randomness found
+Machine.hpp,215,Machine,different-mechanism,no randomness found
+Machine.hpp,630,check_program,hash-based,"hash/commitment comparison, no coefficients"
+Memory.h,24,check_index,different-mechanism,no randomness found
+OfflineMachine.hpp,17,OfflineMachine,different-mechanism,no randomness found
+OfflineMachine.hpp,35,OfflineMachine,different-mechanism,no randomness found
+OnlineMachine.hpp,23,OnlineMachine,different-mechanism,no randomness found
+OnlineMachine.hpp,107,DishonestMajorityMachine,different-mechanism,no randomness found
+OnlineMachine.hpp,115,DishonestMajorityMachine,different-mechanism,no randomness found
+OnlineMachineExt.h,16,DishonestMajorityMachineExt,different-mechanism,no randomness found
+OnlineMachineExt.h,20,get_internal_machine,different-mechanism,no randomness found
+Processor.hpp,174,check,different-mechanism,no randomness found
+Processor.hpp,183,check,hash-based,"hash/commitment comparison, no coefficients"
+Processor.hpp,492,check_buffering_muls,different-mechanism,no randomness found
+Processor.hpp,577,check_buffering_mulrs,different-mechanism,no randomness found
+Processor.hpp,668,check_buffering_dotprods,different-mechanism,no randomness found
+Processor.hpp,770,check_buffering_matmuls,different-mechanism,no randomness found
+Processor.hpp,1069,check_buffering_pre,different-mechanism,no randomness found
+RingMachine.h,46,DishonestMajorityRingMachine,different-mechanism,no randomness found
+RingMachine.hpp,17,HonestMajorityRingMachine,different-mechanism,no randomness found
+RingMachine.hpp,25,HonestMajorityRingMachine,different-mechanism,no randomness found
+RingMachine.hpp,40,RingMachine,different-mechanism,no randomness found
+RingMachine.hpp,66,HonestMajorityRingMachineWithSecurity,different-mechanism,no randomness found
+ThreadJob.h,134,EdabitSacrificeJob,different-mechanism,no randomness found
+ThreadJob.h,169,TripleSacrificeJob,different-mechanism,no randomness found
+ThreadJob.h,180,CheckJob,different-mechanism,no randomness found

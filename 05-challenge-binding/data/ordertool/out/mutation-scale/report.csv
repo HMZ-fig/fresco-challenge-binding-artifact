@@ -1,0 +1,64 @@
+file,line,function,order,evidence
+Exceptions\Exceptions.h,265,Sacrifice_Check_Error,different-mechanism,no randomness found
+Exceptions\Exceptions.h,269,Sacrifice_Check_Error,different-mechanism,no randomness found
+FHE\Ring_Element.cpp,481,check_rep,different-mechanism,no randomness found
+FHE\Ring_Element.cpp,487,check_size,different-mechanism,no randomness found
+FHE\ZKPoK.h,132,size_checkset,different-mechanism,no randomness found
+GC\Base_Circuits.cpp,125,check,different-mechanism,no randomness found
+Input_Output\Input_Output_Base.cpp,11,Update_Checker,hash-based,"hash/commitment comparison, no coefficients"
+Input_Output\Input_Output_Base.cpp,16,Update_Checker,different-mechanism,no randomness found
+Input_Output\Input_Output_Base.cpp,23,Update_Checker,different-mechanism,no randomness found
+Input_Output\Input_Output_Base.cpp,30,Get_Check,hash-based,"hash/commitment comparison, no coefficients"
+LSSS\CAS.cpp,65,check_row_equal,different-mechanism,no randomness found
+LSSS\CAS.cpp,77,check_all_sets,different-mechanism,no randomness found
+LSSS\CAS.cpp,418,check_not_q_l,different-mechanism,no randomness found
+LSSS\MSP.cpp,224,check_qualified,different-mechanism,no randomness found
+LSSS\Open_Protocol.cpp,41,AddToMacs,hash-based,"hash/commitment comparison, no coefficients"
+LSSS\Open_Protocol.cpp,195,RunOpenCheck,post-message,coin tossed inside check
+LSSS\Open_Protocol2.cpp,295,RunOpenCheck,hash-based,"hash/commitment comparison, no coefficients"
+LSSS\Share.cpp,67,set_macs,different-mechanism,no randomness found
+LSSS\Share.cpp,323,check_macs,hash-based,"hash/commitment comparison, no coefficients"
+LSSS\Share.h,93,get_macs,different-mechanism,no randomness found
+LSSS\Share.h,101,get_mac,different-mechanism,no randomness found
+LSSS\Share.h,111,set_mac,different-mechanism,no randomness found
+Mod2Engine\Mod2Maurer.cpp,10,check_triples,different-mechanism,no randomness found
+Mod2Engine\Mod2Maurer.cpp,142,check_routine,hash-based,"hash/commitment comparison, no coefficients"
+Mod2Engine\Mod2Maurer.cpp,216,Gen_Checked_Triples,hash-based,"hash/commitment comparison, no coefficients"
+Mod2Engine\Mod2_Thread.cpp,19,check_exit,different-mechanism,no randomness found
+Mod2Engine\Mod2_Thread.h,69,check,different-mechanism,no randomness found
+Offline\DABitMachine.cpp,12,DABitMachineBase,different-mechanism,no randomness found
+Offline\DABitMachine.cpp,17,MaliciousDABitMachine,different-mechanism,no randomness found
+Offline\FakePrep.cpp,52,make_fake_macs,hash-based,"hash/commitment comparison, no coefficients"
+Offline\FHE_Factory.h,42,ct_mac,different-mechanism,no randomness found
+Offline\offline_phases.cpp,36,check_exit,different-mechanism,no randomness found
+Offline\sacrifice.cpp,14,sacrifice_triples,post-message,coin tossed inside check
+Offline\sacrifice.cpp,98,sacrifice_phase_triples,post-message,coin tossed inside check
+Offline\sacrifice.cpp,110,sacrifice_squares,post-message,coin tossed inside check
+Offline\sacrifice.cpp,190,sacrifice_phase_squares,post-message,coin tossed inside check
+Offline\sacrifice.cpp,202,sacrifice_bits,post-message,coin tossed inside check
+Offline\sacrifice.cpp,279,sacrifice_phase_bits,post-message,coin tossed inside check
+Offline\XOR_Machine.cpp,15,XOR_Machine,different-mechanism,no randomness found
+Offline\XOR_Machine.cpp,19,check_debug,different-mechanism,no randomness found
+Offline\XOR_Machine.cpp,60,consistency_check,different-mechanism,no randomness found
+Offline\XOR_Machine.cpp,264,check_correctness,hash-based,"hash/commitment comparison, no coefficients"
+Online\Machine.h,111,Machine,different-mechanism,no randomness found
+OT\aBit.cpp,174,check_Bits,different-mechanism,no randomness found
+OT\aBit.cpp,181,check_Bits,different-mechanism,no randomness found
+OT\aBit.h,83,get_MAC,different-mechanism,no randomness found
+OT\aBit.h,94,set_MAC,different-mechanism,no randomness found
+OT\aBit_Thread.cpp,22,check_exit,different-mechanism,no randomness found
+OT\BitMatrix.cpp,193,check_transpose,different-mechanism,no randomness found
+OT\BitMatrix.cpp,421,check_transpose,different-mechanism,no randomness found
+OT\COT.cpp,193,next_checked_iteration,different-mechanism,no randomness found
+OT\COT.cpp,233,next_checked_iteration,different-mechanism,no randomness found
+OT\LaAND.cpp,151,check_triples,different-mechanism,no randomness found
+OT\OT_Thread_Data.h,25,check,different-mechanism,no randomness found
+Processor\Instruction.cpp,1760,execute_using_sacrifice_data,hash-based,"hash/commitment comparison, no coefficients"
+Processor\Memory.cpp,233,check_allocated,different-mechanism,no randomness found
+Processor\Processor.h,606,RunOpenCheck,different-mechanism,no randomness found
+System\Player.cpp,418,Check_Broadcast,hash-based,"hash/commitment comparison, no coefficients"
+System\Player.h,131,get_mac_key,different-mechanism,no randomness found
+System\Player.h,135,get_mac_keys,different-mechanism,no randomness found
+Tools\CBC-MAC.cpp,16,CBC_MAC,different-mechanism,no randomness found
+Tools\CBC-MAC.cpp,22,CBC_MAC,different-mechanism,no randomness found
+Tools\cpu-support.h,14,check_cpu,different-mechanism,no randomness found

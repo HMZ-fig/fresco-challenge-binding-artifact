@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-03",
+  "scope": "New clean-checkout core verification during author-requested AI-assisted review, separate from historical canonical counts; not independent laboratory replication.",
+  "upstream_commit": "f8383e6aead6b44d44b798553aaf0bcaccd81dab",
+  "recipe_manuscript_sha256": "594a264e7718232bb62642da4b2e8af382cc583be76fa96b650bdb81963d8054",
+  "source_test_files_unchanged": true,
+  "production_changes": "Only the supplied four-file candidate patch, after the unmodified runs.",
+  "results": {
+    "message_tests": 5,
+    "message_failures": 0,
+    "message_errors": 0,
+    "normal_tampered_pairs_with_nonzero_functional_residual": 3,
+    "disclosed_original_tests": 11,
+    "disclosed_original_failures": 0,
+    "disclosed_original_errors": 0,
+    "disclosed_patched_tests": 11,
+    "disclosed_patched_failures": 0,
+    "disclosed_patched_mac_rejection_errors": 7,
+    "disclosed_patched_completed_baselines": 4
+  },
+  "historical_counts_modified": false,
+  "files": [
+    {
+      "path": "bootstrap.log",
+      "bytes": 18441,
+      "sha256": "cfd20b643efd5f6370a37d5523983c431e6254f4fe7139cacc05cbee3270dae2"
+    },
+    {
+      "path": "disclosed-original.log",
+      "bytes": 3080,
+      "sha256": "2d695d32edfd4614066a26f1bff9ecddf85b4e9602e8243b3362e30e70276f8d"
+    },
+    {
+      "path": "disclosed-patched.log",
+      "bytes": 44208,
+      "sha256": "e736cb39da0c5eeaf513e4944467e09dcdd6362917607373698a5d114db482af"
+    },
+    {
+      "path": "java-version.log",
+      "bytes": 202,
+      "sha256": "53c2870a74e9837e002cdbba23e0de460dd6d8ba78aa567ae5d1857cd6ad5ff2"
+    },
+    {
+      "path": "maven-version.log",
+      "bytes": 365,
+      "sha256": "ceaac7c089cb3dc4f62dc7ff318f0d5fd5c16ac92a2c24f1817635db25da353d"
+    },
+    {
+      "path": "message-level.log",
+      "bytes": 3598,
+      "sha256": "8e6e910835e337fdc268c434517b72ed0a57685fcb50dc698e45cd4e5fe48103"
+    },
+    {
+      "path": "patched-files.txt",
+      "bytes": 416,
+      "sha256": "0b6d94ea55bc38d572144a2bb5a5e9ff86d9ada14a6e4eb5ef190f164afd7c97"
+    },
+    {
+      "path": "reports/dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestKernelMessageLevel.txt",
+      "bytes": 410,
+      "sha256": "31e4fd91a5fa1d70adb2c9773e5639eae18ecf23119f9be6f3753bbeffb6db4e"
+    },
+    {
+      "path": "reports/dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestSpdz2kMacCheckCancellation.txt",
+      "bytes": 39384,
+      "sha256": "ab79beb62730234ae5765c501e3ac295448df6344e8c1ed58fd3de4c3e697cb8"
+    },
+    {
+      "path": "reports/TEST-dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestKernelMessageLevel.xml",
+      "bytes": 13064,
+      "sha256": "7db0a8ca9db50944812bed133e81f9991056b9297a232f7339e58cdd0cb0caf7"
+    },
+    {
+      "path": "reports/TEST-dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestSpdz2kMacCheckCancellation.xml",
+      "bytes": 52704,
+      "sha256": "6700c82b0fe39ec6824d3f837909ebc32b6beb43607c93c084ea851fbd5d90c3"
+    },
+    {
+      "path": "run-manifest.json",
+      "bytes": 6059,
+      "sha256": "783fefcc4bb51d874eac28f08624688e67ae52648d5915b1461e1bb53295dd67"
+    },
+    {
+      "path": "test-source-hash.txt",
+      "bytes": 225,
+      "sha256": "d14f408b3529f8ad26a2b3e104522dbd5b4d39e1fed7c21dfcc20ccb4130464f"
+    }
+  ]
+}

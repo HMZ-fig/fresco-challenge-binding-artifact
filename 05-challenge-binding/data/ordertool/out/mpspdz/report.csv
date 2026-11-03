@@ -1,0 +1,140 @@
+file,line,function,order,evidence
+Beaver.hpp,198,check,different-mechanism,no randomness found
+ChaiGearPrep.hpp,97,adjust_mac_key,different-mechanism,no randomness found
+ChaiGearPrep.hpp,119,get_mac_key,different-mechanism,no randomness found
+CowGearPrep.hpp,96,adjust_mac_key,different-mechanism,no randomness found
+CowGearPrep.hpp,117,get_mac_key,different-mechanism,no randomness found
+CowGearPrep.hpp,123,get_mac_key,hash-based,"hash/commitment comparison, no coefficients"
+DabitSacrifice.hpp,17,DabitSacrifice,different-mechanism,no randomness found
+DabitSacrifice.hpp,32,sacrifice_without_bit_check,hash-based,"hash/commitment comparison, no coefficients"
+DabitSacrifice.hpp,105,DabitSacrifice,different-mechanism,no randomness found
+DabitSacrifice.hpp,118,sacrifice_and_check_bits,different-mechanism,no randomness found
+DealerInput.hpp,255,finalize_no_check,hash-based,"hash/commitment comparison, no coefficients"
+DealerInput.hpp,272,finalize_no_check,different-mechanism,no randomness found
+fake-stuff.hpp,188,check_share,different-mechanism,no randomness found
+fake-stuff.hpp,213,check_share,hash-based,"hash/commitment comparison, no coefficients"
+fake-stuff.hpp,237,mac_filename,different-mechanism,no randomness found
+fake-stuff.hpp,246,write_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,251,write_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,270,write_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,277,read_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,284,maybe_read_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,296,read_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,302,read_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,307,read_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,348,read_generate_write_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,379,read_global_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,407,read_global_mac_key,hash-based,"hash/commitment comparison, no coefficients"
+fake-stuff.hpp,413,read_global_mac_key,different-mechanism,no randomness found
+fake-stuff.hpp,442,make_mac_key_share,different-mechanism,no randomness found
+fake-stuff.hpp,450,make_mac_key_share,different-mechanism,no randomness found
+fake-stuff.hpp,466,generate_mac_keys,hash-based,"hash/commitment comparison, no coefficients"
+fake-stuff.hpp,535,check_files,different-mechanism,no randomness found
+HighGearKeyGen.cpp,11,key_and_mac_generation,different-mechanism,no randomness found
+HighGearKeyGen.cpp,18,key_and_mac_generation,different-mechanism,no randomness found
+LowGearKeyGen.cpp,11,key_and_mac_generation,different-mechanism,no randomness found
+LowGearKeyGen.cpp,18,key_and_mac_generation,different-mechanism,no randomness found
+MAC_Check.h,96,WaitingForCheck,different-mechanism,no randomness found
+MAC_Check.h,127,MAC_Check_,different-mechanism,no randomness found
+MAC_Check.h,163,MAC_Check_Z2k,different-mechanism,no randomness found
+MAC_Check.h,203,Direct_MAC_Check_Z2k,different-mechanism,no randomness found
+MAC_Check.h,217,Check,different-mechanism,no randomness found
+MAC_Check.hpp,67,MAC_Check_,different-mechanism,no randomness found
+MAC_Check.hpp,74,Tree_MAC_Check,different-mechanism,no randomness found
+MAC_Check.hpp,81,Tree_MAC_Check,different-mechanism,no randomness found
+MAC_Check.hpp,150,CheckIfNeeded,post-message,coin tossed inside check
+MAC_Check.hpp,158,AddToCheck,post-message,coin tossed inside check
+MAC_Check.hpp,169,mac_fail_remove,different-mechanism,no randomness found
+MAC_Check.hpp,188,Check,post-message,coin tossed inside check
+MAC_Check.hpp,295,MAC_Check_Z2k,different-mechanism,no randomness found
+MAC_Check.hpp,301,MAC_Check_Z2k,different-mechanism,no randomness found
+MAC_Check.hpp,351,Check,post-message,coin tossed inside check
+MAC_Check.hpp,408,Direct_MAC_Check,different-mechanism,no randomness found
+MAC_Check.hpp,414,Direct_MAC_Check,different-mechanism,no randomness found
+MAC_Check.hpp,420,Direct_MAC_Check,different-mechanism,no randomness found
+MAC_Check_Base.h,36,MAC_Check_Base,different-mechanism,no randomness found
+MAC_Check_Base.h,39,Check,different-mechanism,no randomness found
+MAC_Check_Base.h,71,get_check_player,different-mechanism,no randomness found
+MAC_Check_Base.hpp,80,CheckFor,hash-based,"hash/commitment comparison, no coefficients"
+mac_key.hpp,14,read_or_generate_mac_key,different-mechanism,no randomness found
+mac_key.hpp,24,check_field_size,different-mechanism,no randomness found
+MaliciousRepMC.h,35,Check,different-mechanism,no randomness found
+MaliciousRepMC.hpp,125,CheckFor,hash-based,"hash/commitment comparison, no coefficients"
+MaliciousRepMC.hpp,150,Check,hash-based,"hash/commitment comparison, no coefficients"
+MaliciousRepMC.hpp,202,Check,different-mechanism,no randomness found
+MaliciousRepPrep.hpp,111,sacrifice,different-mechanism,no randomness found
+MalRepRingPrep.hpp,140,TripleShuffleSacrifice,different-mechanism,no randomness found
+MalRepRingPrep.hpp,146,TripleShuffleSacrifice,different-mechanism,no randomness found
+MalRepRingPrep.hpp,152,TripleShuffleSacrifice,different-mechanism,no randomness found
+MalRepRingPrep.hpp,159,triple_sacrifice,hash-based,"hash/commitment comparison, no coefficients"
+MalRepRingPrep.hpp,202,triple_sacrifice,different-mechanism,no randomness found
+MamaShare.h,31,MamaMac,different-mechanism,no randomness found
+MamaShare.h,37,MamaMac,different-mechanism,no randomness found
+MascotPrep.h,127,get_mac_key,different-mechanism,no randomness found
+Opener.h,29,Check,different-mechanism,no randomness found
+PostSacrifice.hpp,11,PostSacrifice,different-mechanism,no randomness found
+PostSacrifice.hpp,17,PostSacrifice,post-message,shared-randomness pool (secret)
+PostSacrifice.hpp,56,check,post-message,shared-randomness pool (secret)
+ProtocolSet.h,49,check,different-mechanism,no randomness found
+ProtocolSet.h,93,check,different-mechanism,no randomness found
+ProtocolSet.h,140,check,different-mechanism,no randomness found
+ProtocolSetup.h,54,get_mac_key,different-mechanism,no randomness found
+ProtocolSetup.h,89,get_mac_key,different-mechanism,no randomness found
+Rep4.hpp,51,check,different-mechanism,no randomness found
+Rep4.hpp,311,must_check,different-mechanism,no randomness found
+Rep4.hpp,340,check_hashes,hash-based,"hash/commitment comparison, no coefficients"
+Rep4Input.hpp,82,check,hash-based,"hash/commitment comparison, no coefficients"
+Rep4MC.hpp,44,Check,different-mechanism,no randomness found
+Rep4Prep.h,49,edabit_sacrifice_buckets,different-mechanism,no randomness found
+Replicated.h,157,check,different-mechanism,no randomness found
+Replicated.hpp,316,check_received,different-mechanism,no randomness found
+ReplicatedMC.h,35,Check,different-mechanism,no randomness found
+ReplicatedPrep.h,98,edabit_sacrifice_buckets,different-mechanism,no randomness found
+ReplicatedPrep.h,107,get_mac_key,different-mechanism,no randomness found
+ReplicatedPrep.h,108,adjust_mac_key,different-mechanism,no randomness found
+ReplicatedPrep.h,356,edabit_sacrifice_buckets,different-mechanism,no randomness found
+ReplicatedPrep.hpp,439,buffer_bits_without_check,different-mechanism,no randomness found
+ReplicatedPrep.hpp,495,buffer_personal_dabits_without_check,hash-based,"hash/commitment comparison, no coefficients"
+ReplicatedPrep.hpp,537,buffer_personal_edabits_without_check,different-mechanism,no randomness found
+ReplicatedPrep.hpp,566,buffer_personal_edabits_without_check_pre,different-mechanism,no randomness found
+ReplicatedPrep.hpp,600,buffer_personal_edabits_without_check_post,different-mechanism,no randomness found
+ReplicatedPrep.hpp,710,buffer_ring_bits_without_check,different-mechanism,no randomness found
+ReplicatedPrep.hpp,739,buffer_dabits_without_check,different-mechanism,no randomness found
+ReplicatedPrep.hpp,849,buffer_dabits_without_check,different-mechanism,no randomness found
+ReplicatedPrep.hpp,860,buffer_dabits_without_check,different-mechanism,no randomness found
+ReplicatedPrep.hpp,908,buffer_edabits_without_check,different-mechanism,no randomness found
+ReplicatedPrep.hpp,935,buffer_edabits_without_check,different-mechanism,no randomness found
+ReplicatedPrep.hpp,986,buffer_edabits_without_check,different-mechanism,no randomness found
+RepRingOnlyEdabitPrep.h,18,edabit_sacrifice_buckets,different-mechanism,no randomness found
+RingOnlyPrep.hpp,9,buffer_dabits_from_bits_without_check,hash-based,"hash/commitment comparison, no coefficients"
+SemiMC.h,30,Check,different-mechanism,no randomness found
+SemiMC.h,58,Check,different-mechanism,no randomness found
+SemiPrep2k.h,31,edabit_sacrifice_buckets,different-mechanism,no randomness found
+ShamirMC.h,68,Check,different-mechanism,no randomness found
+Share.h,101,get_mac,different-mechanism,no randomness found
+Share.h,103,set_mac,different-mechanism,no randomness found
+Share.hpp,16,get_mac_key,different-mechanism,no randomness found
+Share.hpp,22,set_mac_key,hash-based,"hash/commitment comparison, no coefficients"
+ShareInterface.cpp,12,get_mac_key,different-mechanism,no randomness found
+ShareInterface.cpp,17,set_mac_key,different-mechanism,no randomness found
+ShareInterface.h,83,read_or_generate_mac_key,different-mechanism,no randomness found
+ShareInterface.h,86,generate_mac_key,different-mechanism,no randomness found
+ShareMatrix.h,46,check,different-mechanism,no randomness found
+ShareMatrix.h,160,check,different-mechanism,no randomness found
+ShuffleSacrifice.hpp,17,ShuffleSacrifice,different-mechanism,no randomness found
+ShuffleSacrifice.hpp,23,ShuffleSacrifice,different-mechanism,no randomness found
+ShuffleSacrifice.hpp,91,dabit_sacrifice,hash-based,"hash/commitment comparison, no coefficients"
+ShuffleSacrifice.hpp,182,EdabitShuffleSacrifice,different-mechanism,no randomness found
+ShuffleSacrifice.hpp,190,edabit_sacrifice,hash-based,"hash/commitment comparison, no coefficients"
+ShuffleSacrifice.hpp,365,edabit_sacrifice_buckets,different-mechanism,no randomness found
+ShuffleSacrifice.hpp,375,edabit_sacrifice_buckets,hash-based,"hash/commitment comparison, no coefficients"
+SpdzWise.hpp,38,maybe_check,post-message,shared-randomness pool (secret)
+SpdzWise.hpp,110,add_to_check,different-mechanism,no randomness found
+SpdzWise.hpp,116,check,post-message,shared-randomness pool (secret)
+SpdzWise.hpp,148,zero_check,post-message,field 'r' from shared-randomness pool
+SpdzWiseMC.h,49,Check,different-mechanism,no randomness found
+SpdzWiseMC.h,54,CheckFor,hash-based,"hash/commitment comparison, no coefficients"
+SpdzWisePrep.hpp,19,get_mac_key,different-mechanism,no randomness found
+SpdzWiseRing.hpp,16,zero_check,different-mechanism,no randomness found
+SpdzWiseRingPrep.h,39,edabit_sacrifice_buckets,different-mechanism,no randomness found
+SpdzWiseShare.hpp,12,read_or_generate_mac_key,post-message,field 'masked' from shared-randomness pool

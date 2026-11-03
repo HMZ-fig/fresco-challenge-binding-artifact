@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : 84DEB42CA7CC71B6B06050AF4A006767C5310971E8F68F42ECC9B01B91648A9F
+Path      : E:\Projects\_finals\05-challenge-binding\code\artifact\kernel\kernel\messagelevel\TestKernelMessageLevel.java
+

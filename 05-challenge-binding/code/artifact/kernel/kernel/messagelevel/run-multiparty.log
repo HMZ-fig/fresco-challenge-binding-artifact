@@ -1,0 +1,20 @@
+﻿[INFO] Inspecting build with total of 1 modules
+[INFO] Building fresco-spdz2k 1.3.9
+MSGLVL_PARTIES 2
+MSGLVL_TAMPER_RESULT status=1 opened=[11956783808182708155, 16320299201142599866]
+MSGLVL_2P_TAMPER_OK true
+MSGLVL_PARTIES 4
+MSGLVL_TAMPER_RESULT status=1 opened=[12761479827509325276, 13262794654697379155]
+MSGLVL_4P_TAMPER_OK true
+MSGLVL_PARTIES 3
+MSGLVL_CONTROL_RESULT blocked
+MSGLVL_CONTROL_OK true
+MSGLVL_PARTIES 3
+MSGLVL_HONEST_RESULT status=0 opened=[50, 600]
+MSGLVL_HONEST_OK true
+MSGLVL_PARTIES 3
+MSGLVL_TAMPER_RESULT status=1 opened=[4125655602419772330, 15126037923528352310]
+MSGLVL_TAMPER_OK true
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.377 s -- in dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestKernelMessageLevel
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS

@@ -1,0 +1,163 @@
+{
+  "purpose": "Independent author-authorized local review rerun; separate from all retained historical executions.",
+  "paper_sha256": "594a264e7718232bb62642da4b2e8af382cc583be76fa96b650bdb81963d8054",
+  "upstream_commit": "f8383e6aead6b44d44b798553aaf0bcaccd81dab",
+  "public_source_snapshots_matches_git_blobs": 28,
+  "bootstrap_exit": 0,
+  "message_maven_exit": 0,
+  "disclosed_original_maven_exit": 0,
+  "disclosed_patched_maven_exit": 1,
+  "message_pairs": [
+    {
+      "sum": 17516568696268933475,
+      "product": 2531350336978639119,
+      "functional_residual": 2688113812081450723
+    },
+    {
+      "sum": 4181721518495487346,
+      "product": 574549403232686555,
+      "functional_residual": 9173839401870698115
+    },
+    {
+      "sum": 16989384920737236564,
+      "product": 6986602549422487715,
+      "functional_residual": 17687041535159237539
+    }
+  ],
+  "results": {
+    "TestKernelMessageLevel": {
+      "attributes": {
+        "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+        "version": "3.0",
+        "name": "dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestKernelMessageLevel",
+        "time": "1.457",
+        "tests": "5",
+        "errors": "0",
+        "skipped": "0",
+        "failures": "0"
+      },
+      "cases": [
+        {
+          "name": "messageLevelTwoParties",
+          "errors": 0,
+          "mac_rejection": false
+        },
+        {
+          "name": "messageLevelFourParties",
+          "errors": 0,
+          "mac_rejection": false
+        },
+        {
+          "name": "messageLevelControlBlocked",
+          "errors": 0,
+          "mac_rejection": false
+        },
+        {
+          "name": "honestComputation",
+          "errors": 0,
+          "mac_rejection": false
+        },
+        {
+          "name": "messageLevelTamperAccepted",
+          "errors": 0,
+          "mac_rejection": false
+        }
+      ]
+    },
+    "TestSpdz2kMacCheckCancellation": {
+      "attributes": {
+        "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+        "version": "3.0",
+        "name": "dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestSpdz2kMacCheckCancellation",
+        "time": "7.534",
+        "tests": "11",
+        "errors": "7",
+        "skipped": "0",
+        "failures": "0"
+      },
+      "cases": [
+        {
+          "name": "baseline",
+          "errors": 0,
+          "mac_rejection": false
+        },
+        {
+          "name": "attack",
+          "errors": 1,
+          "mac_rejection": true
+        },
+        {
+          "name": "attackLarge",
+          "errors": 1,
+          "mac_rejection": true
+        },
+        {
+          "name": "attackMultiCheck",
+          "errors": 1,
+          "mac_rejection": true
+        },
+        {
+          "name": "attackComputedProducts",
+          "errors": 1,
+          "mac_rejection": true
+        },
+        {
+          "name": "baselineLarge",
+          "errors": 0,
+          "mac_rejection": false
+        },
+        {
+          "name": "baselineTwoParties",
+          "errors": 0,
+          "mac_rejection": false
+        },
+        {
+          "name": "attackCheaterOne",
+          "errors": 1,
+          "mac_rejection": true
+        },
+        {
+          "name": "baselineFourParties",
+          "errors": 0,
+          "mac_rejection": false
+        },
+        {
+          "name": "attackFourParties",
+          "errors": 1,
+          "mac_rejection": true
+        },
+        {
+          "name": "attackTwoParties",
+          "errors": 1,
+          "mac_rejection": true
+        }
+      ]
+    }
+  },
+  "patched_production_files": [
+    "suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/protocols/computations/Spdz2kMacCheckComputation.java",
+    "suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePool.java",
+    "suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePoolImpl.java",
+    "suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/synchronization/Spdz2kRoundSynchronization.java"
+  ],
+  "historical_logs_unchanged": {
+    "appoutput/run.log": "95004fb6d519903ab60869c0b4b84a41ae84d076bbbc7d43e167aac0ee15af22",
+    "messagelevel/run.log": "756932691c50e04c2b2950621b4c989b8ea7d1de3a45a686c752b8d539016ae7",
+    "messagelevel/repeat-runs.txt": "c3b50f825f07c487b54b38c15e3557f8cef10d542cd18de26ce72df328007b2d",
+    "messagelevel/run-multiparty.log": "5b9b23d5936cd90268baf4a01b4555c0776403b4e820212c6a9e74896a19410a"
+  },
+  "new_logs": {
+    "bootstrap.log": "cfd20b643efd5f6370a37d5523983c431e6254f4fe7139cacc05cbee3270dae2",
+    "disclosed-original.log": "2d695d32edfd4614066a26f1bff9ecddf85b4e9602e8243b3362e30e70276f8d",
+    "disclosed-patched.log": "e736cb39da0c5eeaf513e4944467e09dcdd6362917607373698a5d114db482af",
+    "java-version.log": "53c2870a74e9837e002cdbba23e0de460dd6d8ba78aa567ae5d1857cd6ad5ff2",
+    "maven-version.log": "ceaac7c089cb3dc4f62dc7ff318f0d5fd5c16ac92a2c24f1817635db25da353d",
+    "message-level.log": "8e6e910835e337fdc268c434517b72ed0a57685fcb50dc698e45cd4e5fe48103"
+  },
+  "test_source_hashes": {
+    "TestKernelMessageLevel.java": "84deb42ca7cc71b6b06050af4a006767c5310971e8f68f42ecc9b01b91648a9f",
+    "TestSpdz2kMacCheckCancellation.java": "7cd2e267654ae254544bcfcc5fba549a7617ff19cca3856c8a33ba0487aa6551"
+  },
+  "patch_sha256": "7c2d91ed1390c7bcadc37546f44cc850604c44a335909422e5a1d20638e0e0ba",
+  "execution_difference_from_appendix": "Official Maven path and explicit isolated review directory used instead of Get-Command/PATH and GUID directory; manuscript B.3/B.4 blocks extracted verbatim with variable preamble. No test, POM or production edit beyond the supplied four-file patch."
+}

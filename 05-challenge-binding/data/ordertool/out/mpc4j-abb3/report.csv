@@ -1,0 +1,31 @@
+file,line,function,order,evidence
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\Abb3RpConfig.java,64,getMacConfig,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\Abb3RpConfig.java,116,setMacConfig,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\Abb3RpParty.java,114,getMacParty,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\z2\replicate\Aby3Z2cConfig.java,44,getSingleVerifyThreshold,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\z2\replicate\Aby3Z2cConfig.java,72,setVerifyParam,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\AbstractTripletLongParty.java,122,checkAndOrganizeInput,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\TripletRpLongCpFactory.java,48,createDefaultMacConfig,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\aby3\Aby3LongConfig.java,48,getSingleVerifyThreshold,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\aby3\Aby3LongConfig.java,76,setVerifyParam,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\aby3\Aby3SemiHonestLongParty.java,23,verifyMul,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\mac\Cgh18RpLongConfig.java,44,getSingleVerifyThreshold,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\mac\Cgh18RpLongConfig.java,69,setVerifyParam,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\mac\Cgh18RpLongParty.java,81,getCurrentMacIndex,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\mac\Cgh18RpLongParty.java,86,resetMac,hash-based,"hash/commitment comparison, no coefficients"
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\mac\Cgh18RpLongParty.java,428,checkAndOrganizeInput,post-message,fresh local generator
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\replicate\mac\Cgh18RpLongParty.java,727,genMac,post-message,fresh local generator
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\utils\ShuffleUtils.java,161,applyPermutationToRowsNoCheck,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\utils\ShuffleUtils.java,166,applyPermutationToRowsNoCheck,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\utils\ShuffleUtils.java,173,applyPermutationToRowsNoCheck,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\basic\utils\ShuffleUtils.java,191,applyPermutationToRowsNoCheck,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\structure\zlong\replicate\TripletRpLongMacVector.java,78,TripletRpLongMacVector,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\structure\zlong\replicate\TripletRpLongMacVector.java,89,TripletRpLongMacVector,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\structure\zlong\replicate\TripletRpLongMacVector.java,210,deleteMac,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\structure\zlong\replicate\TripletRpLongMacVector.java,216,getMacVec,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\structure\zlong\replicate\TripletRpLongMacVector.java,221,setMacVec,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\structure\zlong\replicate\TripletRpLongMacVector.java,227,getMacIndex,different-mechanism,no randomness found
+src\main\java\edu\alibaba\mpc4j\s3pc\abb3\structure\zlong\replicate\TripletRpLongMacVector.java,232,setMacIndex,different-mechanism,no randomness found
+src\test\java\edu\alibaba\mpc4j\s3pc\abb3\basic\conversion\Aby3ConvTest.java,167,verifyRes,different-mechanism,no randomness found
+src\test\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\z2\Aby3Z2cTest.java,124,verifyRes,different-mechanism,no randomness found
+src\test\java\edu\alibaba\mpc4j\s3pc\abb3\basic\core\zlong\TripletRpLongCpTest.java,139,verifyRes,different-mechanism,no randomness found

@@ -1,0 +1,25 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>fresco-lib-pom</artifactId>
+  <name>${project.groupId}:${project.artifactId}</name>
+
+  <modelVersion>4.0.0</modelVersion>
+  <modules>
+    <module>lp</module>
+    <module>dea</module>
+    <module>mimc</module>
+    <module>common</module>
+    <module>debug</module>
+    <module>list</module>
+    <module>fixed</module>
+    <module>bristol</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <parent>
+    <artifactId>master-pom</artifactId>
+    <groupId>dk.alexandra.fresco</groupId>
+    <version>1.3.9</version>
+  </parent>
+</project>

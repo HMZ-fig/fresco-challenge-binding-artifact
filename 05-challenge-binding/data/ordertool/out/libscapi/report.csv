@@ -1,0 +1,20 @@
+file,line,function,order,evidence
+infra\json.hpp,4826,check_eof,different-mechanism,no randomness found
+infra\json.hpp,9636,get_unchecked,different-mechanism,no randomness found
+infra\json.hpp,9708,get_checked,different-mechanism,no randomness found
+infra\json.hpp,9762,get_unchecked,different-mechanism,no randomness found
+infra\json.hpp,9817,get_checked,different-mechanism,no randomness found
+interactive_mid_protocols\CommitmentSchemePedersenTrapdoor.hpp,19,validate,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolAnd.hpp,52,checkChallengeLength,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolDamgardJurikEncryptedZero.hpp,112,checkChallengeLength,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolDamgardJurikProduct.hpp,206,checkSoundnessParam,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolDH.hpp,96,checkChallengeLength,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolDH.hpp,136,checkChallengeLength,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolDHExtended.hpp,84,checkChallengeLength,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolDHExtended.hpp,115,checkChallengeLength,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolPedersenCmtKnowledge.hpp,103,checkChallengeLength,different-mechanism,no randomness found
+interactive_mid_protocols\SigmaProtocolPedersenCmtKnowledge.hpp,140,checkChallengeLength,different-mechanism,no randomness found
+interactive_mid_protocols\ZeroKnowledge.hpp,131,proccessVerify,different-mechanism,no randomness found
+interactive_mid_protocols\ZeroKnowledge.hpp,150,ZKPOKFromSigmaCmtPedersenProver,different-mechanism,no randomness found
+interactive_mid_protocols\ZeroKnowledge.hpp,219,ZKPOKFromSigmaCmtPedersenVerifier,different-mechanism,no randomness found
+primitives\PrfOpenSSL.hpp,84,OpenSSLHMAC,different-mechanism,no randomness found

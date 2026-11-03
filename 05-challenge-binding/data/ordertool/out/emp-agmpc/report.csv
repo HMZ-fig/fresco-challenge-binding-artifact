@@ -1,0 +1,8 @@
+file,line,function,order,evidence
+abitmp.h,96,check,post-message,coin tossed inside check
+abitmp.h,104,check1,pre-message,coin tossed before first message
+abitmp.h,201,check2,hash-based,"hash/commitment comparison, no coefficients"
+fpremp.h,365,check_MAC_phi,different-mechanism,no randomness found
+fpremp.h,390,check_zero,different-mechanism,no randomness found
+helper.h,160,check_MAC,different-mechanism,no randomness found
+helper.h,184,check_correctness,different-mechanism,no randomness found

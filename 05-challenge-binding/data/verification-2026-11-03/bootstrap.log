@@ -1,0 +1,237 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 8 modules
+[INFO] Installing Central Publishing features
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] FRESCO parent pom                                                  [pom]
+[INFO] fresco-core                                                        [jar]
+[INFO] dk.alexandra.fresco:fresco-lib-pom                                 [pom]
+[INFO] fresco-common                                                      [jar]
+[INFO] dk.alexandra.fresco:tools-master-pom                               [pom]
+[INFO] commitment                                                         [jar]
+[INFO] dk.alexandra.fresco:fresco-protocol-suites-pom                     [pom]
+[INFO] fresco-spdz2k                                                      [jar]
+[INFO] 
+[INFO] -------------------< dk.alexandra.fresco:master-pom >-------------------
+[INFO] Building FRESCO parent pom 1.3.9                                   [1/8]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ master-pom ---
+[INFO] argLine set to -javaagent:E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\m2\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\fresco\\target\\jacoco.exec
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ master-pom ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ master-pom ---
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\pom.xml to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\master-pom\1.3.9\master-pom-1.3.9.pom
+[INFO] 
+[INFO] ----------------------< dk.alexandra.fresco:core >----------------------
+[INFO] Building fresco-core 1.3.9                                         [2/8]
+[INFO]   from core\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ core ---
+[INFO] argLine set to -javaagent:E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\m2\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\fresco\\core\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ core ---
+[INFO] skip non existing resourceDirectory E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\core\src\main\resources
+[INFO] 
+[INFO] --- compiler:2.0.2:compile (default-compile) @ core ---
+[INFO] Compiling 136 source files to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\core\target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ core ---
+[INFO] Copying 13 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:2.0.2:testCompile (default-testCompile) @ core ---
+[INFO] Compiling 77 source files to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\core\target\test-classes
+[INFO] 
+[INFO] --- surefire:2.18.1:test (default-test) @ core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ core ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:2.2:jar (default-jar) @ core ---
+[INFO] Building jar: E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\core\target\core-1.3.9.jar
+[INFO] 
+[INFO] --- jar:2.2:test-jar (default) @ core ---
+[INFO] Building jar: E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\core\target\core-1.3.9-tests.jar
+[INFO] 
+[INFO] --- failsafe:2.18.1:integration-test (default) @ core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- failsafe:2.18.1:verify (default) @ core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ core ---
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\core\pom.xml to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\core\1.3.9\core-1.3.9.pom
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\core\target\core-1.3.9.jar to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\core\1.3.9\core-1.3.9.jar
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\core\target\core-1.3.9-tests.jar to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\core\1.3.9\core-1.3.9-tests.jar
+[INFO] 
+[INFO] -----------------< dk.alexandra.fresco:fresco-lib-pom >-----------------
+[INFO] Building dk.alexandra.fresco:fresco-lib-pom 1.3.9                  [3/8]
+[INFO]   from lib\pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ fresco-lib-pom ---
+[INFO] argLine set to -javaagent:E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\m2\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\fresco\\lib\\target\\jacoco.exec
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ fresco-lib-pom ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ fresco-lib-pom ---
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\pom.xml to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\fresco-lib-pom\1.3.9\fresco-lib-pom-1.3.9.pom
+[INFO] 
+[INFO] ---------------------< dk.alexandra.fresco:common >---------------------
+[INFO] Building fresco-common 1.3.9                                       [4/8]
+[INFO]   from lib\common\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ common ---
+[INFO] argLine set to -javaagent:E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\m2\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\fresco\\lib\\common\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ common ---
+[INFO] skip non existing resourceDirectory E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\src\main\resources
+[INFO] 
+[INFO] --- compiler:2.0.2:compile (default-compile) @ common ---
+[INFO] Compiling 92 source files to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ common ---
+[INFO] skip non existing resourceDirectory E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\src\test\resources
+[INFO] 
+[INFO] --- compiler:2.0.2:testCompile (default-testCompile) @ common ---
+[INFO] Compiling 59 source files to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ common ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:2.2:jar (default-jar) @ common ---
+[INFO] Building jar: E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\target\common-1.3.9.jar
+[INFO] 
+[INFO] --- jar:2.2:test-jar (default) @ common ---
+[INFO] Building jar: E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\target\common-1.3.9-tests.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ common ---
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\pom.xml to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\common\1.3.9\common-1.3.9.pom
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\target\common-1.3.9.jar to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\common\1.3.9\common-1.3.9.jar
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\lib\common\target\common-1.3.9-tests.jar to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\common\1.3.9\common-1.3.9-tests.jar
+[INFO] 
+[INFO] ----------------< dk.alexandra.fresco:tools-master-pom >----------------
+[INFO] Building dk.alexandra.fresco:tools-master-pom 1.3.9                [5/8]
+[INFO]   from tools\pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ tools-master-pom ---
+[INFO] argLine set to -javaagent:E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\m2\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\fresco\\tools\\target\\jacoco.exec
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ tools-master-pom ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ tools-master-pom ---
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\pom.xml to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\tools-master-pom\1.3.9\tools-master-pom-1.3.9.pom
+[INFO] 
+[INFO] -------------------< dk.alexandra.fresco:commitment >-------------------
+[INFO] Building commitment 1.3.9                                          [6/8]
+[INFO]   from tools\commitment\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ commitment ---
+[INFO] argLine set to -javaagent:E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\m2\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\fresco\\tools\\commitment\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ commitment ---
+[INFO] skip non existing resourceDirectory E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\src\main\resources
+[INFO] 
+[INFO] --- compiler:2.0.2:compile (default-compile) @ commitment ---
+[INFO] Compiling 4 source files to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ commitment ---
+[INFO] skip non existing resourceDirectory E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\src\test\resources
+[INFO] 
+[INFO] --- compiler:2.0.2:testCompile (default-testCompile) @ commitment ---
+[INFO] Compiling 4 source files to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ commitment ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ commitment ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:2.2:jar (default-jar) @ commitment ---
+[INFO] Building jar: E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\target\commitment-1.3.9.jar
+[INFO] 
+[INFO] --- jar:2.2:test-jar (default) @ commitment ---
+[INFO] Building jar: E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\target\commitment-1.3.9-tests.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ commitment ---
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\pom.xml to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\commitment\1.3.9\commitment-1.3.9.pom
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\target\commitment-1.3.9.jar to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\commitment\1.3.9\commitment-1.3.9.jar
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\tools\commitment\target\commitment-1.3.9-tests.jar to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\commitment\1.3.9\commitment-1.3.9-tests.jar
+[INFO] 
+[INFO] -----------< dk.alexandra.fresco:fresco-protocol-suites-pom >-----------
+[INFO] Building dk.alexandra.fresco:fresco-protocol-suites-pom 1.3.9      [7/8]
+[INFO]   from suite\pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ fresco-protocol-suites-pom ---
+[INFO] argLine set to -javaagent:E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\m2\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\fresco\\suite\\target\\jacoco.exec
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ fresco-protocol-suites-pom ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ fresco-protocol-suites-pom ---
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\suite\pom.xml to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\fresco-protocol-suites-pom\1.3.9\fresco-protocol-suites-pom-1.3.9.pom
+[INFO] 
+[INFO] ---------------------< dk.alexandra.fresco:spdz2k >---------------------
+[INFO] Building fresco-spdz2k 1.3.9                                       [8/8]
+[INFO]   from suite\spdz2k\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ spdz2k ---
+[INFO] argLine set to -javaagent:E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\m2\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\round-02-reproduction\\fresco\\suite\\spdz2k\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ spdz2k ---
+[INFO] skip non existing resourceDirectory E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\suite\spdz2k\src\main\resources
+[INFO] 
+[INFO] --- compiler:2.0.2:compile (default-compile) @ spdz2k ---
+[INFO] Compiling 35 source files to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\suite\spdz2k\target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ spdz2k ---
+[INFO] skip non existing resourceDirectory E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\suite\spdz2k\src\test\resources
+[INFO] 
+[INFO] --- compiler:2.0.2:testCompile (default-testCompile) @ spdz2k ---
+[INFO] Compiling 16 source files to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\suite\spdz2k\target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ spdz2k ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ spdz2k ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ spdz2k ---
+[INFO] Building jar: E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\suite\spdz2k\target\spdz2k-1.3.9.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ spdz2k ---
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\suite\spdz2k\pom.xml to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\spdz2k\1.3.9\spdz2k-1.3.9.pom
+[INFO] Installing E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\fresco\suite\spdz2k\target\spdz2k-1.3.9.jar to E:\Projects\_finals\_papers\tmp\strict-review\round-02-reproduction\m2\dk\alexandra\fresco\spdz2k\1.3.9\spdz2k-1.3.9.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for FRESCO parent pom 1.3.9:
+[INFO] 
+[INFO] FRESCO parent pom .................................. SUCCESS [ 54.721 s]
+[INFO] fresco-core ........................................ SUCCESS [01:47 min]
+[INFO] dk.alexandra.fresco:fresco-lib-pom ................. SUCCESS [  0.031 s]
+[INFO] fresco-common ...................................... SUCCESS [ 56.879 s]
+[INFO] dk.alexandra.fresco:tools-master-pom ............... SUCCESS [  0.023 s]
+[INFO] commitment ......................................... SUCCESS [  0.912 s]
+[INFO] dk.alexandra.fresco:fresco-protocol-suites-pom ..... SUCCESS [  0.012 s]
+[INFO] fresco-spdz2k ...................................... SUCCESS [ 24.962 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:30 min
+[INFO] Finished at: 2026-11-03T19:12:51+08:00
+[INFO] ------------------------------------------------------------------------

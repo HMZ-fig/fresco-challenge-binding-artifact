@@ -1,0 +1,3 @@
+# Preserve recorded source, log, report, and manuscript bytes across platforms.
+# SHA-256 evidence indexes refer to the original bytes, including line endings.
+* -text

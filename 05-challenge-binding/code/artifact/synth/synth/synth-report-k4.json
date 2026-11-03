@@ -1,0 +1,32 @@
+{
+  "modulus_exponent": 128,
+  "low_bits": 64,
+  "coefficients": [
+    123,
+    456,
+    789,
+    1011
+  ],
+  "positions": [
+    2,
+    3
+  ],
+  "kernel_vector": [
+    0,
+    0,
+    340282366920938463463374607431768210445,
+    789
+  ],
+  "residual": 0,
+  "low_part_deltas": {
+    "2": 18446744073709550605,
+    "3": 789
+  },
+  "changed_low_parts": [
+    2,
+    3
+  ],
+  "accepted": true,
+  "output_changed": true,
+  "kernel_multiplicity_at_a": 340282366920938463463374607431768211456
+}

@@ -1,0 +1,57 @@
+{
+  "name": "circl-qndleq-vuln",
+  "events": [
+    [
+      "init",
+      "qndleq-v1",
+      []
+    ],
+    [
+      "absorb",
+      "stmt",
+      [
+        "abs_g",
+        "gx",
+        "h",
+        "hx",
+        "gP",
+        "hP"
+      ]
+    ],
+    [
+      "squeeze",
+      "c",
+      []
+    ],
+    [
+      "check",
+      "c",
+      [
+        "g",
+        "gx",
+        "h",
+        "hx",
+        "gP",
+        "hP",
+        "z"
+      ]
+    ]
+  ],
+  "pc": [
+    "abs_g",
+    "g",
+    "gP",
+    "gx",
+    "h",
+    "hP",
+    "hx",
+    "z"
+  ],
+  "post": {
+    "c": [
+      "z"
+    ]
+  },
+  "has_domain": true,
+  "constraint_bound": []
+}

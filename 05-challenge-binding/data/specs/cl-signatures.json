@@ -1,0 +1,60 @@
+{
+  "name": "cl-signatures",
+  "events": [
+    [
+      "init",
+      "anoncreds",
+      []
+    ],
+    [
+      "absorb",
+      "statement",
+      [
+        "credential_pub_keys",
+        "sub_proof_requests"
+      ]
+    ],
+    [
+      "absorb",
+      "commitments",
+      [
+        "c_list"
+      ]
+    ],
+    [
+      "absorb",
+      "tau",
+      [
+        "tau_values"
+      ]
+    ],
+    [
+      "absorb",
+      "nonce",
+      [
+        "nonce"
+      ]
+    ],
+    [
+      "squeeze",
+      "c",
+      []
+    ],
+    [
+      "check",
+      "c",
+      [
+        "c_list",
+        "tau_values",
+        "nonce"
+      ]
+    ]
+  ],
+  "pc": [
+    "c_list",
+    "tau_values"
+  ],
+  "post": {},
+  "has_domain": true,
+  "constraint_bound": []
+}

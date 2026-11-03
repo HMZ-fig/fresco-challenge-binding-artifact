@@ -1,0 +1,11 @@
+file,line,function,order,evidence
+src\main\java\dk\alexandra\fresco\suite\spdz2k\datatypes\Spdz2kSInt.java,58,getMacShare,different-mechanism,no randomness found
+src\main\java\dk\alexandra\fresco\suite\spdz2k\protocols\computations\Spdz2kMacCheckComputation.java,44,Spdz2kMacCheckComputation,pre-existing,randomness from public pool/field generator
+src\main\java\dk\alexandra\fresco\suite\spdz2k\synchronization\Spdz2kRoundSynchronization.java,51,doMacCheck,different-mechanism,no randomness found
+src\test\java\dk\alexandra\fresco\suite\spdz2k\protocols\computations\TestSpdz2kMacCheckCancellation.java,166,attackMultiCheck,different-mechanism,no randomness found
+src\test\java\dk\alexandra\fresco\suite\spdz2k\protocols\computations\TestSpdz2kMacCheckComputation.java,35,testInvalidMacCheck,different-mechanism,no randomness found
+src\test\java\dk\alexandra\fresco\suite\spdz2k\protocols\computations\TestSpdz2kMacCheckComputation.java,44,testInvalidMacCheckThree,different-mechanism,no randomness found
+src\test\java\dk\alexandra\fresco\suite\spdz2k\resource\storage\TestSpdz2kDummyDataSupplier.java,120,assertMacCorrect,different-mechanism,no randomness found
+src\test\java\dk\alexandra\fresco\suite\spdz2k\resource\storage\TestSpdz2kDummyDataSupplier.java,141,getMacKeyFromSuppliers,different-mechanism,no randomness found
+src\test\java\dk\alexandra\fresco\suite\spdz2k\synchronization\TestSpdz2kRoundSynchronization.java,31,testFinishedEvalMacCheck,different-mechanism,no randomness found
+src\test\java\dk\alexandra\fresco\suite\spdz2k\synchronization\TestSpdz2kRoundSynchronizationExceedThreshold.java,32,testFinishedEvalMacCheck,different-mechanism,no randomness found

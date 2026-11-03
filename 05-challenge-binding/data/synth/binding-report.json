@@ -1,0 +1,19 @@
+{
+  "ring": "F_65519",
+  "masks": [
+    45747,
+    6372
+  ],
+  "positions": [
+    0,
+    1
+  ],
+  "kernel_vector": [
+    6372,
+    19772
+  ],
+  "residual": 0,
+  "missing_binding": true,
+  "attackable": true,
+  "changed_values": 2
+}

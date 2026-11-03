@@ -1,0 +1,11 @@
+file,line,function,order,evidence
+src\structs.rs,123,get_mac_key_share,different-mechanism,no randomness found
+src\structs.rs,246,macs,different-mechanism,no randomness found
+src\lowgear\mac_check.rs,17,open_and_check_macs,post-message,field 'random_values' from shared-randomness pool
+src\lowgear\mac_check.rs,32,check_mac,post-message,coin tossed inside check
+src\lowgear\mod.rs,142,get_mac_plaintext,post-message,fresh local generator
+src\lowgear\mod.rs,151,get_mac_plaintext_vector,post-message,fresh local generator
+src\lowgear\mod.rs,163,get_other_mac_enc,post-message,fresh local generator
+src\lowgear\triplets.rs,125,sacrifice,post-message,field 'r' from shared-randomness pool
+src\lowgear\triplets.rs,335,verify_macs,different-mechanism,no randomness found
+src\lowgear\triplets.rs,433,test_sacrifice,post-message,fresh local generator

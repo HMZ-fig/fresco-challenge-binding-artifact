@@ -1,0 +1,24 @@
+[
+  {
+    "file": "_hunt\\fresco\\suite\\spdz2k\\src\\main\\java\\dk\\alexandra\\fresco\\suite\\spdz2k\\protocols\\computations\\Spdz2kMacCheckComputation.java",
+    "verdict": "CANDIDATE",
+    "evidence_lines": [
+      60
+    ]
+  },
+  {
+    "file": "_hunt\\fresco\\suite\\spdz\\src\\main\\java\\dk\\alexandra\\fresco\\suite\\spdz\\gates\\SpdzMacCheckProtocol.java",
+    "verdict": "SAFE_FRESH",
+    "evidence_lines": [
+      3,
+      66
+    ]
+  },
+  {
+    "file": "_hunt\\fresco\\suite\\spdz\\src\\main\\java\\dk\\alexandra\\fresco\\suite\\spdz\\SpdzRoundSynchronization.java",
+    "verdict": "SAFE_FRESH",
+    "evidence_lines": [
+      64
+    ]
+  }
+]

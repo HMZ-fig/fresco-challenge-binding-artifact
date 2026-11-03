@@ -1,0 +1,69 @@
+{
+  "revision": "f8383e6aead6b44d44b798553aaf0bcaccd81dab",
+  "purpose": "source inspection of reproduction recipe, not Maven execution",
+  "sources": [
+    {
+      "upstream_path": "pom.xml",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/pom.xml",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\root-pom.xml",
+      "sha256": "cb7fa3d17f4d1965ebf134afc9bc20f7719113c567020d5f0a9f2d0c4629b2af",
+      "bytes": 5337
+    },
+    {
+      "upstream_path": "core/pom.xml",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/core/pom.xml",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\core-pom.xml",
+      "sha256": "db101fcfb2910da5c0c2d32e11a866647ebb18f8019ae419c860e39d0db7b432",
+      "bytes": 2246
+    },
+    {
+      "upstream_path": "lib/pom.xml",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/lib/pom.xml",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\lib-pom.xml",
+      "sha256": "997a8b94fbb7293c5d3742f27dc851b5b7c13835ab4761b1bc220e23dd2e73fe",
+      "bytes": 758
+    },
+    {
+      "upstream_path": "lib/common/pom.xml",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/lib/common/pom.xml",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\common-pom.xml",
+      "sha256": "83667ebd4e69c06a0044c5a62c227eb09657b6eac1f762e5ccbcae5e5b59cf4c",
+      "bytes": 1746
+    },
+    {
+      "upstream_path": "suite/pom.xml",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/pom.xml",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\suite-pom.xml",
+      "sha256": "469a0f79ea62743fc853b72ae4cf48430f38aa98dca34272478a9c0785310164",
+      "bytes": 644
+    },
+    {
+      "upstream_path": "suite/spdz2k/pom.xml",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/pom.xml",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\spdz2k-pom.xml",
+      "sha256": "c690f38343f63ca1a47aef8c096b4bdfa4ecfee4688c2624dc1e53b532cd0ff9",
+      "bytes": 1578
+    },
+    {
+      "upstream_path": "tools/pom.xml",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/tools/pom.xml",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\tools-pom.xml",
+      "sha256": "3840bca0defc1d20b7c7e597509d60cd3686e44e1c14029d442d58ada60d907d",
+      "bytes": 998
+    },
+    {
+      "upstream_path": "tools/commitment/pom.xml",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/tools/commitment/pom.xml",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\commitment-pom.xml",
+      "sha256": "3b3b7e607614c243c44d9e57c8ec6f9d157634e81fee7cdf84f9175d7e424ba8",
+      "bytes": 1145
+    },
+    {
+      "upstream_path": "suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePool.java",
+      "url": "https://raw.githubusercontent.com/aicis/fresco/f8383e6aead6b44d44b798553aaf0bcaccd81dab/suite/spdz2k/src/main/java/dk/alexandra/fresco/suite/spdz2k/resource/Spdz2kResourcePool.java",
+      "path": "E:\\Projects\\_finals\\_papers\\tmp\\strict-review\\upstream\\Spdz2kResourcePool.java",
+      "sha256": "c402401055c92d62b9ce5c7e366ea7e641a6c1875a52c7baa9993b9d4d6280fe",
+      "bytes": 3392
+    }
+  ]
+}

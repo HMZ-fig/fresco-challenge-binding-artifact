@@ -1,0 +1,26 @@
+file,line,function,order,evidence
+benchmark\conditional_fiber.cpp,73,BM_FiberMixComputationNoCheck,post-message,fresh local generator
+benchmark\conditional_fiber.cpp,113,BM_FiberMixComputationWithCheck,post-message,fresh local generator
+examples\aes128\aes128_main.cpp,97,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\aes128\common\aes128.cpp,35,check_correctness,different-mechanism,no randomness found
+examples\benchmark_integers\benchmark_integers_main.cpp,127,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\benchmark_primitive_operations\benchmark_primitive_operations_main.cpp,151,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\benchmark_providers\benchmark_providers_main.cpp,120,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\example_template\example_template_main.cpp,62,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\millionaires_problem\millionaires_problem_main.cpp,66,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\sha256\sha256_main.cpp,96,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\tutorial\crosstabs\crosstabs_main.cpp,89,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\tutorial\innerproduct\innerproduct_main.cpp,102,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+examples\tutorial\mult3\mult3_main.cpp,105,CheckPartyArgumentSyntax,different-mechanism,no randomness found
+motioncore\base\register.cpp,97,CheckSetupCondition,different-mechanism,no randomness found
+motioncore\base\register.cpp,107,CheckOnlineCondition,different-mechanism,no randomness found
+motioncore\protocols\share_wrapper.cpp,774,ShareConsistencyCheck,hash-based,"hash/commitment comparison, no coefficients"
+motioncore\protocols\constant\constant_share.h,154,ConstructorConsistencyCheck,different-mechanism,no randomness found
+motioncore\utility\bit_vector.cpp,1027,BoundsCheckEquality,different-mechanism,no randomness found
+motioncore\utility\bit_vector.cpp,1036,BoundsCheckInRange,different-mechanism,no randomness found
+test\test_simdify_gate.cpp,79,CheckCorrectness,different-mechanism,no randomness found
+test\test_simdify_gate.cpp,92,CheckCorrectness,different-mechanism,no randomness found
+test\test_subset_gate.cpp,81,CheckCorrectness,different-mechanism,no randomness found
+test\test_subset_gate.cpp,93,CheckCorrectness,different-mechanism,no randomness found
+test\test_unsimdify_gate.cpp,77,CheckCorrectness,different-mechanism,no randomness found
+test\test_unsimdify_gate.cpp,85,CheckCorrectness,different-mechanism,no randomness found
