@@ -611,50 +611,50 @@ The examined online use of keys and values does not directly turn this MAC-side 
 
 ## References
 
-- **[ark-mpc]** Renegade. *ark-mpc*. <https://github.com/renegade-fi/ark-mpc>, 2023.
-- **[barretenberg]** Aztec. *Barretenberg*. <https://github.com/AztecProtocol/barretenberg>, 2020.
-- **[bpw16]** Bernhard, David; Pereira, Olivier; Warinschi, Bogdan. *How not to Prove Yourself: Pitfalls of the Fiat-Shamir Heuristic and Applications to Helios*. ASIACRYPT 2012, pp. 626--643. doi:10.1007/978-3-642-34961-4_38.
+- **[ark-mpc]** Renegade. *ark-mpc*. Software repository. <https://github.com/renegade-fi/ark-mpc>. Accessed 2026-11-03.
+- **[barretenberg]** Aztec Network. *Barretenberg*. Software component of *aztec-packages*. <https://github.com/AztecProtocol/aztec-packages/tree/next/barretenberg>. Accessed 2026-11-03.
+- **[bpw16]** Bernhard, David; Pereira, Olivier; Warinschi, Bogdan. *How Not to Prove Yourself: Pitfalls of the Fiat-Shamir Heuristic and Applications to Helios*. ASIACRYPT 2012, pp. 626--643. doi:10.1007/978-3-642-34961-4_38.
 - **[bulletproofs]** Bünz, Benedikt; Bootle, Jonathan; Boneh, Dan; Poelstra, Andrew; Wuille, Pieter; Maxwell, Greg. *Bulletproofs: Short Proofs for Confidential Transactions and More*. IEEE S&P 2018, pp. 315--334. doi:10.1109/SP.2018.00020.
 - **[canetti-fs]** Canetti, Ran; Chen, Yilei; Holmgren, Justin; Lombardi, Alex; Rothblum, Guy N.; Rothblum, Ron D.; Wichs, Daniel. *Fiat-Shamir: From Practice to Theory*. STOC 2019, pp. 1082--1090. doi:10.1145/3313276.3316380.
-- **[ccccheck]** Kolozyan, Arman; Vandenbogaerde, Bram; Swalens, Janwillem; Hoste, Lode; Chaliasos, Stefanos; De Roover, Coen. *Language-Agnostic Detection of Computation-Constraint Inconsistencies in ZKP Programs via Value Inference*. Cryptology ePrint Archive, Paper 2025/2120; IEEE S&P 2026. <https://eprint.iacr.org/2025/2120>.
-- **[circl]** Cloudflare. *CIRCL: Cloudflare Interoperable Reusable Cryptographic Library*. <https://github.com/cloudflare/circl>, 2019.
-- **[cl-signatures]** Hyperledger AnonCreds. *CL Signatures*. <https://github.com/hyperledger/anoncreds-clsignatures-rs>, 2022.
-- **[dusk-plonk]** Dusk Network. *dusk-plonk*. <https://github.com/dusk-network/plonk>, 2019.
-- **[emp-agmpc]** EMP Toolkit. *emp-agmpc*. <https://github.com/emp-toolkit/emp-agmpc>, 2022.
+- **[ccccheck]** Kolozyan, Arman; Vandenbogaerde, Bram; Swalens, Janwillem; Hoste, Lode; Chaliasos, Stefanos; De Roover, Coen. *Language-Agnostic Detection of Computation-Constraint Inconsistencies in ZKP Programs Via Value Inference*. IEEE S&P 2026, pp. 3091--3110. doi:10.1109/SP63933.2026.00207. Full version: <https://eprint.iacr.org/2025/2120>.
+- **[circl]** Cloudflare. *CIRCL: Cloudflare Interoperable Reusable Cryptographic Library*. Software repository. <https://github.com/cloudflare/circl>. Accessed 2026-11-03.
+- **[cl-signatures]** Hyperledger AnonCreds. *CL Signatures Rust*. Software repository. <https://github.com/anoncreds/anoncreds-clsignatures-rs>. Accessed 2026-11-03.
+- **[dusk-plonk]** Dusk Network. *dusk-plonk*. Software repository. <https://github.com/dusk-network/plonk>. Accessed 2026-11-03.
+- **[emp-agmpc]** EMP Toolkit. *emp-agmpc*. Software repository. <https://github.com/emp-toolkit/emp-agmpc>. Accessed 2026-11-03.
 - **[empagmpc2017]** Wang, Xiao; Ranellucci, Samuel; Katz, Jonathan. *Global-Scale Secure Multiparty Computation*. ACM CCS 2017, pp. 39--56. doi:10.1145/3133956.3133979.
-- **[eurocrypt2026]** Bruggemann, Andreas; Schneider, Thomas. *When Trying to Catch Cheaters Breaks the MPC: Breaking and Fixing Delayed Consistency Checks in Trident, Fantastic Four, SWIFT, and Quad*. EUROCRYPT 2026, pp. 457--487. doi:10.1007/978-3-032-25324-8_16. <https://eprint.iacr.org/2026/234>.
+- **[eurocrypt2026]** Brüggemann, Andreas; Schneider, Thomas. *When Trying to Catch Cheaters Breaks the MPC: Breaking and Fixing Delayed Consistency Checks in Trident, Fantastic Four, SWIFT, and Quad*. EUROCRYPT 2026, pp. 457--487. doi:10.1007/978-3-032-25324-8_16. Full version: <https://eprint.iacr.org/2026/234>.
 - **[fantastic4]** Dalskov, Anders; Escudero, Daniel; Keller, Marcel. *Fantastic Four: Honest-Majority Four-Party Secure Computation With Malicious Security*. USENIX Security 2021, pp. 2183--2200.
-- **[fastcrypto]** Mysten Labs. *FastCrypto*. <https://github.com/MystenLabs/fastcrypto>, 2022.
+- **[fastcrypto]** Mysten Labs. *FastCrypto*. Software repository. <https://github.com/MystenLabs/fastcrypto>. Accessed 2026-11-03.
 - **[fiat-shamir]** Fiat, Amos; Shamir, Adi. *How to Prove Yourself: Practical Solutions to Identification and Signature Problems*. CRYPTO '86, pp. 186--194. doi:10.1007/3-540-47721-7_12.
-- **[fresco]** Alexandra Institute. *FRESCO: A Framework for Efficient Secure Computation*. <https://github.com/aicis/fresco/tree/f8383e6aead6b44d44b798553aaf0bcaccd81dab>, 2026. Revision f8383e6aead6b44d44b798553aaf0bcaccd81dab; pinned source inspected 2026-11-03.
-- **[frozenheart]** Miller, Jim. *Coordinated disclosure of vulnerabilities affecting Girault, Bulletproofs, and PlonK*. Trail of Bits Blog, April 2022. <https://blog.trailofbits.com/2022/04/13/part-1-coordinated-disclosure-of-vulnerabilities-affecting-girault-bulletproofs-and-plonk/>.
-- **[gnark]** Consensys. *gnark*. <https://github.com/Consensys/gnark>, 2021.
-- **[halo2]** Zcash Foundation. *Halo2*. <https://github.com/zcash/halo2>, 2023.
-- **[issue324]** FRESCO developers. *Bug in MAC check for SPDZ-based protocols*. GitHub issue #324, <https://github.com/aicis/fresco/issues/324>, 2018. Opened 2018-12-10; still open as of 2026-10-20.
-- **[jellyfish]** Espresso Systems. *Jellyfish*. <https://github.com/EspressoSystems/jellyfish>, 2021.
-- **[kimchi]** O(1) Labs. *Kimchi: Mina Proof System*. <https://github.com/o1-labs/proof-systems>, 2020.
-- **[libscapi]** Bar-Ilan University. *libscapi*. <https://github.com/cryptobiu/libscapi>, 2016.
-- **[libsignal]** Signal Foundation. *libsignal*. <https://github.com/signalapp/libsignal>, 2020.
+- **[fresco]** Alexandra Institute. *FRESCO: A Framework for Efficient Secure Computation*. Version 1.3.9, revision f8383e6aead6b44d44b798553aaf0bcaccd81dab, 2026-05-20. <https://github.com/aicis/fresco/tree/f8383e6aead6b44d44b798553aaf0bcaccd81dab>. Accessed 2026-11-03.
+- **[frozenheart]** Miller, Jim. *Coordinated disclosure of vulnerabilities affecting Girault, Bulletproofs, and PlonK*. Trail of Bits Blog, 2022-04-13. <https://blog.trailofbits.com/2022/04/13/part-1-coordinated-disclosure-of-vulnerabilities-affecting-girault-bulletproofs-and-plonk/>. Accessed 2026-11-03.
+- **[gnark]** Consensys. *gnark*. Software repository. <https://github.com/Consensys-Incorporated/gnark>. Accessed 2026-11-03.
+- **[halo2]** Zcash developers. *Halo2*. Software repository. <https://github.com/zcash/halo2>. Accessed 2026-11-03.
+- **[issue324]** n1v0lg. *Bug in MAC check for SPDZ-based protocols*. FRESCO GitHub issue #324, opened 2018-12-10. <https://github.com/aicis/fresco/issues/324>. Open as of 2026-11-03; accessed 2026-11-03.
+- **[jellyfish]** Espresso Systems. *Jellyfish*. Software repository. <https://github.com/EspressoSystems/jellyfish>. Accessed 2026-11-03.
+- **[kimchi]** O(1) Labs. *Kimchi*. Software repository. <https://github.com/o1-labs/proof-systems>. Accessed 2026-11-03.
+- **[libscapi]** Bar-Ilan University Cryptography Research Group. *LIBSCAPI: The Secure Computation API*. Software repository. <https://github.com/cryptobiu/libscapi>. Accessed 2026-11-03.
+- **[libsignal]** Signal Messenger, LLC. *libsignal*. Software repository. <https://github.com/signalapp/libsignal>. Accessed 2026-11-03.
 - **[marlin]** Chiesa, Alessandro; Hu, Yuncong; Maller, Mary; Mishra, Pratyush; Vesely, Noah; Ward, Nicholas. *Marlin: Preprocessing zkSNARKs with Universal and Updatable SRS*. EUROCRYPT 2020, pp. 738--768. doi:10.1007/978-3-030-45721-1_26.
 - **[mascot]** Keller, Marcel; Orsini, Emmanuela; Scholl, Peter. *MASCOT: Faster Malicious Arithmetic Secure Computation with Oblivious Transfer*. ACM CCS 2016, pp. 830--842. doi:10.1145/2976749.2978357.
-- **[motion]** TU Darmstadt. *MOTION: A Framework for Mixed-Protocol Multi-Party Computation*. <https://github.com/encryptogroup/MOTION>, 2020.
-- **[mpc4j]** Alibaba. *MPC4j*. <https://github.com/alibaba-edu/mpc4j>, 2022.
+- **[motion]** Cryptography and Privacy Engineering Group (ENCRYPTO), TU Darmstadt. *MOTION: A Framework for Mixed-Protocol Multi-Party Computation*. Software repository. <https://github.com/encryptogroup/MOTION>. Accessed 2026-11-03.
+- **[mpc4j]** Liu, Weiran, and contributors. *mpc4j: Multi-Party Computation for Java*. Software repository. <https://github.com/alibaba-edu/mpc4j>. Accessed 2026-11-03.
 - **[mpspdz]** Keller, Marcel. *MP-SPDZ: A Versatile Framework for Multi-Party Computation*. ACM CCS 2020, pp. 1575--1590. doi:10.1145/3372297.3417872.
 - **[nova]** Kothapalli, Abhiram; Setty, Srinath; Tzialla, Ioanna. *Nova: Recursive Zero-Knowledge Arguments from Folding Schemes*. CRYPTO 2022, pp. 359--388. doi:10.1007/978-3-031-15985-5_13.
 - **[offkey]** Keller, Marcel; Navot, Sela; Tyagi, Nirvan. *Off-Key: Inconsistent MAC Keys Compromise Privacy in SPDZ-Family MPC*. Cryptology ePrint Archive, Paper 2026/2533, 2026. <https://eprint.iacr.org/2026/2533>.
-- **[opencoral]** Ant Group. *OpenCoral*. <https://github.com/AntCPLab/OpenCoral>, 2024.
-- **[plonky2]** Polygon Zero. *Plonky2*. <https://github.com/0xPolygonZero/plonky2>, 2022.
-- **[plonky3]** Polygon Zero. *Plonky3*. <https://github.com/Plonky3/Plonky3>, 2024.
+- **[opencoral]** Ant CP Lab, Ant Research. *OpenCoral*. Software repository. <https://github.com/AntCPLab/OpenCoral>. Accessed 2026-11-03.
+- **[plonky2]** Polygon Zero. *Plonky2*. Software repository (archived). <https://github.com/0xPolygonZero/plonky2>. Accessed 2026-11-03.
+- **[plonky3]** Polygon Zero. *Plonky3*. Software repository. <https://github.com/Plonky3/Plonky3>. Accessed 2026-11-03.
 - **[pointcheval]** Pointcheval, David; Stern, Jacques. *Security Proofs for Signature Schemes*. EUROCRYPT 1996, pp. 387--398. doi:10.1007/3-540-68339-9_33.
 - **[rushing]** Kyster, Alexander; Nielsen, Frederik Huss; Oechsner, Sabine; Scholl, Peter. *Rushing at SPDZ: On the Practical Security of Malicious MPC Implementations*. IEEE S&P 2025, pp. 2491--2508. doi:10.1109/SP61157.2025.00176. <https://eprint.iacr.org/2025/789>.
-- **[scale-mamba]** KU Leuven COSIC. *SCALE-MAMBA*. <https://github.com/KULeuven-COSIC/SCALE-MAMBA>, 2026.
-- **[snarkjs]** iden3. *snarkjs*. <https://github.com/iden3/snarkjs>, 2020.
-- **[sp1]** Succinct Labs. *SP1: A Performant, Open-Source zkVM*. <https://github.com/succinctlabs/sp1>, 2024.
-- **[spdz]** Damgard, Ivan; Pastro, Valerio; Smart, Nigel; Zakarias, Sarah. *Multiparty Computation from Somewhat Homomorphic Encryption*. CRYPTO 2012, pp. 643--662. doi:10.1007/978-3-642-32009-5_38.
-- **[spdz2k]** Cramer, Ronald; Damgard, Ivan; Escudero, Daniel; Scholl, Peter; Xing, Chaoping. *SPDZ2k: Efficient MPC mod 2^k for Dishonest Majority*. CRYPTO 2018, pp. 769--798. doi:10.1007/978-3-319-96881-0_26. <https://eprint.iacr.org/2018/482>.
-- **[spu]** SecretFlow. *SPU: Secure Processing Unit*. <https://github.com/secretflow/spu>, 2023.
+- **[scale-mamba]** KU Leuven COSIC. *SCALE-MAMBA*. Software repository. <https://github.com/KULeuven-COSIC/SCALE-MAMBA>. Accessed 2026-11-03.
+- **[snarkjs]** iden3. *snarkjs*. Software repository. <https://github.com/iden3/snarkjs>. Accessed 2026-11-03.
+- **[sp1]** Succinct Labs. *SP1*. Software repository. <https://github.com/succinctlabs/sp1>. Accessed 2026-11-03.
+- **[spdz]** Damgård, Ivan; Pastro, Valerio; Smart, Nigel; Zakarias, Sarah. *Multiparty Computation from Somewhat Homomorphic Encryption*. CRYPTO 2012, pp. 643--662. doi:10.1007/978-3-642-32009-5_38.
+- **[spdz2k]** Cramer, Ronald; Damgård, Ivan; Escudero, Daniel; Scholl, Peter; Xing, Chaoping. *SPDZ2k: Efficient MPC mod 2^k for Dishonest Majority*. CRYPTO 2018, pp. 769--798. doi:10.1007/978-3-319-96881-0_26. <https://eprint.iacr.org/2018/482>.
+- **[spu]** SecretFlow. *SPU: Secure Processing Unit*. Software repository. <https://github.com/secretflow/spu>. Accessed 2026-11-03.
 - **[swift]** Koti, Nishat; Pancholi, Mahak; Patra, Arpita; Suresh, Ajith. *SWIFT: Super-fast and Robust Privacy-Preserving Machine Learning*. USENIX Security 2021, pp. 2651--2668.
 - **[trident]** Chaudhari, Harsh; Rachuri, Rahul; Suresh, Ajith. *Trident: Efficient 4PC Framework for Privacy Preserving Machine Learning*. NDSS 2020. doi:10.14722/ndss.2020.23005.
 - **[weakfs]** Dao, Quang; Miller, Jim; Wright, Opal; Grubbs, Paul. *Weak Fiat-Shamir Attacks on Modern Proof Systems*. IEEE S&P 2023, pp. 199--216. doi:10.1109/SP46215.2023.10179408.
-- **[winterfell]** Facebook Novi. *Winterfell: A STARK Prover and Verifier*. <https://github.com/facebook/winterfell>, 2019.
-- **[zippel]** Angel, Sebastian; Cohen, Sydnie-Shea; Ioannidis, Eleftherios; Mishra, Pratyush; Ozdemir, Alex; Qiu, Yuxiang; Shirzad, Alireza. *Zippel: A Language, Compiler, Runtime, and Analyzer for ZK Proof Systems*. Cryptology ePrint Archive, Paper 2026/2517; IEEE S&P 2027. <https://eprint.iacr.org/2026/2517>.
+- **[winterfell]** Winterfell contributors. *Winterfell: A STARK Prover and Verifier*. Software repository. <https://github.com/meta/winterfell>. Accessed 2026-11-03.
+- **[zippel]** Angel, Sebastian; Cohen, Sydnie-Shea; Ioannidis, Eleftherios; Mishra, Pratyush; Ozdemir, Alex; Qiu, Yuxiang; Shirzad, Alireza. *Zippel: A Language, Compiler, Runtime, and Analyzer for ZK Proof Systems*. IEEE S&P 2027, to appear. Author manuscript: <https://www.cis.upenn.edu/~sga001/papers/zippel-sp27.pdf>.
