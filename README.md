@@ -1,6 +1,6 @@
 # Challenge Binding in FRESCO SPDZ2k: research artifact
 
-Materials for the prepared manuscript *Challenge Binding in FRESCO SPDZ2k: A Message-Level Case Study*. No ePrint paper identifier has been assigned in this package. The manuscript declares predominantly AI-generated work under human direction; the human author remains responsible for its claims, evidence, citations, and code.
+Materials for the prepared manuscript *Challenge Binding in FRESCO SPDZ2k: A Message-Level Case Study*. No ePrint paper identifier has been assigned in this package. The manuscript declares Substantial AI contribution in a dedicated section after the conclusion; the human author remains responsible for its claims, evidence, citations, and code.
 
 The case study examines FRESCO `f8383e6aead6b44d44b798553aaf0bcaccd81dab`. It instantiates a previously published predictable-coefficient cancellation template in the SPDZ2k public-seed path and retains message-level executions with incorrect openings. [FRESCO issue #324](https://github.com/aicis/fresco/issues/324) records the per-check coin-tossing requirement; *[Rushing at SPDZ](https://eprint.iacr.org/2025/789)* supplies the closest earlier attack template.
 

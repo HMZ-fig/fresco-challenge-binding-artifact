@@ -241,8 +241,8 @@ path,source,bytes,sha256
 05-challenge-binding/data/verification-2026-11-03/reports/dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestSpdz2kMacCheckCancellation.txt,05-challenge-binding/data/verification-2026-11-03/reports/dk.alexandra.fresco.suite.spdz2k.protocols.computations.TestSpdz2kMacCheckCancellation.txt,39384,ab79beb62730234ae5765c501e3ac295448df6344e8c1ed58fd3de4c3e697cb8
 05-challenge-binding/data/verification-2026-11-03/run-manifest.json,05-challenge-binding/data/verification-2026-11-03/run-manifest.json,6059,783fefcc4bb51d874eac28f08624688e67ae52648d5915b1461e1bb53295dd67
 05-challenge-binding/data/verification-2026-11-03/test-source-hash.txt,05-challenge-binding/data/verification-2026-11-03/test-source-hash.txt,225,d14f408b3529f8ad26a2b3e104522dbd5b4d39e1fed7c21dfcc20ccb4130464f
-05-challenge-binding/paper/Challenge-Binding-FRESCO-SPDZ2k.pdf,_papers/Challenge-Binding-FRESCO-SPDZ2k.pdf,512659,f4917e1704d2b12615e1d2469b08a454b14bc6b1fcda257767e4a5a5471964b7
-05-challenge-binding/paper/FRESCO-SPDZ2K-CASE-STUDY-v1.0.md,05-challenge-binding/paper/FRESCO-SPDZ2K-CASE-STUDY-v1.0.md,83843,09f9ed7b9341ffecc9c0ea2e6af421044610fd559ad2c37c127ad0d778d56492
+05-challenge-binding/paper/Challenge-Binding-FRESCO-SPDZ2k.pdf,_papers/Challenge-Binding-FRESCO-SPDZ2k.pdf,512428,a836fc8e6a713e442d6b088b113dbf0aad811e9b6ce699a6bb47320ef7562d49
+05-challenge-binding/paper/FRESCO-SPDZ2K-CASE-STUDY-v1.0.md,05-challenge-binding/paper/FRESCO-SPDZ2K-CASE-STUDY-v1.0.md,83604,2ced27308243b1ed1a0218e8583cd0bc45f981bc16c8eacf98df644c9eed3145
 source/fresco-f8383e6/AbstractSpdz2kTest.java,strict-review/upstream/AbstractSpdz2kTest.java,3554,f69208536495a892ecad00573711b12fdb95bcef3fff878edae61b9f586d851e
 source/fresco-f8383e6/AesCtrDrbg.java,strict-review/upstream/AesCtrDrbg.java,4642,db3a525179013bb3c60b0971d838574a958981fc3acd13ad8e94a85217391dd7
 source/fresco-f8383e6/ArithmeticDummyDataSupplier.java,strict-review/upstream/ArithmeticDummyDataSupplier.java,4904,667d57485691190d7e23bed7d33ac49e37506a83c950b960750cf13320112bdc

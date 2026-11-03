@@ -6,10 +6,8 @@ authors:
     email: huangmingzhao@sjtu.edu.cn
 date: "2026-11-03"
 status: "author-review draft"
-ai_designation: "Predominantly AI-generated work"
+ai_designation: "Substantial AI contribution"
 ---
-
-**AI contribution designation: Predominantly AI-generated work.**
 
 **Abstract.** FRESCO's SPDZ2k suite derives its batched MAC-check coefficients from a setup-time public seed, making the stream predictable before opening shares are sent. We examine this implementation path at a pinned revision. A source-level derivation accounts for low-limb carries and high-bit corrections and shows that the value-share shifts $e=(r_j,-r_i)$ preserve the check residual while retaining the original MAC shares. A message-level harness executes this deviation against unmodified honest opening code. The recorded sum/product outputs violate a relation required for every possible input of the corrupt party, and the test framework records normal completion. The retained evidence includes two-, three-, and four-party executions with dummy preprocessing. The predictable-seed attack template appears in *Rushing at SPDZ*, and FRESCO's issue tracker recorded the per-check randomness requirement in 2018; our contribution is the SPDZ2k public-seed path, its explicit kernel witness, and the implementation evidence. We also give a conditional single-opening analysis and assess a four-file candidate mitigation that rejects seven recorded tampering scenarios while preserving four honest baselines. Audit tools and descriptive corpora provide context. The proof concerns the specified value-share deviation; unrestricted malicious behavior, production preprocessing, and a complete mitigation argument remain outside the established result.
 
@@ -259,9 +257,9 @@ At the examined FRESCO revision, the public joint seed makes the SPDZ2k MAC-chec
 
 The candidate patch rejects the seven recorded tampering scenarios, and the synthesis and audit tools make the construction inspectable. The C1/C2 framework and descriptive corpora organize the surrounding audit questions. The demonstrated result is bounded by one revision, dummy preprocessing and local harness runs with party threads within one JVM; completing the malicious-state analysis, validating the mitigation and restoring the full historical investigation remain necessary next steps. Appendix B supplies the current-layout recipe for the core message-level test.
 
-## 8. Assistance disclosure
+## 8. AI contribution disclosure
 
-**Predominantly AI-generated work.** AI systems performed most of the technical work and manuscript development under human direction. Their contributions included source analysis, proof development, experimental execution and verification, and manuscript preparation and revision. The human author primarily posed questions and provided guidance. The author remains responsible for understanding, verifying, and defending the claims, evidence, citations, and code, and for the integrity of the submitted work.
+**Substantial AI contribution.** AI systems contributed to source analysis, proof development, experimental execution and verification, and manuscript preparation and revision. The author remains responsible for understanding, verifying, and defending the claims, evidence, citations, and code, and for the integrity of the submitted work.
 
 ## Appendix A: Residual identity on the opening path
 
